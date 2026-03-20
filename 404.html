@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  var seg = window.location.pathname.replace('/rollout-tracker', '');
+  var query = window.location.search;
+  var hash = window.location.hash;
+  window.location.replace('/rollout-tracker/?p=' + encodeURIComponent(seg) + (query ? '&q=' + encodeURIComponent(query.slice(1)) : '') + hash);
+</script>
+</head>
+</html>
