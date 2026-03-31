@@ -2,7 +2,7 @@ name: Sync & Deploy
 
 on:
   schedule:
-    - cron: '0 */2 * * *'   # every 2 hours
+    - cron: '45 * * * *'    # every hour at :45
   workflow_dispatch:          # manual trigger from GitHub Actions UI
 
 permissions:
