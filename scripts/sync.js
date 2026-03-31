@@ -140,21 +140,23 @@ async function fetchAmplitudeChart(chartId) {
   return { sparkline: sparkline.slice(-30), latestRaw: latest, trend };
 }
 
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
 async function syncAmplitude() {
   const result = {};
-  await Promise.allSettled(
-    AMP_CHARTS.map(async chartId => {
-      try {
-        const d = await fetchAmplitudeChart(chartId);
-        if (d) {
-          result[chartId] = d;
-          console.log(`  ✓ Amplitude ${chartId}: latest=${d.latestRaw} trend=${d.trend}`);
-        }
-      } catch (e) {
-        console.error(`  ✗ Amplitude ${chartId}: ${e.message}`);
+  // Sequential with 300ms gap to avoid 429 rate limiting
+  for (const chartId of AMP_CHARTS) {
+    try {
+      const d = await fetchAmplitudeChart(chartId);
+      if (d) {
+        result[chartId] = d;
+        console.log(`  ✓ Amplitude ${chartId}: latest=${d.latestRaw} trend=${d.trend}`);
       }
-    })
-  );
+    } catch (e) {
+      console.error(`  ✗ Amplitude ${chartId}: ${e.message}`);
+    }
+    await sleep(300);
+  }
   return result;
 }
 
