@@ -1,0 +1,71 @@
+name: Sync & Deploy
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours
+  workflow_dispatch:          # manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync Jira + Amplitude
+        env:
+          JIRA_EMAIL:           ${{ secrets.JIRA_EMAIL }}
+          JIRA_TOKEN:           ${{ secrets.JIRA_TOKEN }}
+          AMPLITUDE_API_KEY:    ${{ secrets.AMPLITUDE_API_KEY }}
+          AMPLITUDE_API_SECRET: ${{ secrets.AMPLITUDE_API_SECRET }}
+        run: node scripts/sync.js
+
+      - name: Commit updated syncedData.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/syncedData.json
+          git diff --cached --quiet && echo "No data changes." || git commit -m "chore: sync data $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+      - name: Build
+        run: npm run build
+
+      - name: Inject 404.html for SPA routing
+        run: |
+          cat > dist/404.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <script>
+            var seg = window.location.pathname.replace('/rollout-tracker', '');
+            var query = window.location.search;
+            var hash = window.location.hash;
+            window.location.replace('/rollout-tracker/?p=' + encodeURIComponent(seg) + (query ? '&q=' + encodeURIComponent(query.slice(1)) : '') + hash);
+          </script>
+          </head>
+          </html>
+          EOF
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: false
