@@ -1,6 +1,145 @@
 {
-  "lastSynced": "2026-03-31T17:12:50.921Z",
-  "jira": {},
+  "lastSynced": "2026-03-31T17:23:43.783Z",
+  "jira": {
+    "CHANGE-87845": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-88891": {
+      "status": "Closed",
+      "assignee": "Oscar López",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Courtney Atkinson",
+        "body": "QA is moving to Closed against smir demo env for all browsers on both desktop and mobile devices."
+      }
+    },
+    "CHANGE-87841": {
+      "status": "Done",
+      "assignee": "Olga Fetisova",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Oscar López",
+        "body": "Context: "
+      }
+    },
+    "CHANGE-87842": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87848": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87835": {
+      "status": "Done",
+      "assignee": "Sarahi Mireles",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Courtney Atkinson",
+        "body": "QA is moving to Ready to Deploy against smir demo env"
+      }
+    },
+    "CHANGE-87839": {
+      "status": "Implementation",
+      "assignee": "Courtney Atkinson",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87836": {
+      "status": "Done",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-83693": {
+      "status": "Implementation",
+      "assignee": "Sarahi Mireles",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87840": {
+      "status": "Closed",
+      "assignee": "Courtney Atkinson",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87847": {
+      "status": "ToDo",
+      "assignee": "Courtney Atkinson",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-83975": {
+      "status": "Implementation",
+      "assignee": "Oscar López",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87849": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-89248": {
+      "status": "Ready to Deploy",
+      "assignee": "Sarahi Mireles",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Sarahi Mireles",
+        "body": ""
+      }
+    },
+    "CHANGE-87844": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87846": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-87843": {
+      "status": "ToDo",
+      "assignee": "Courtney Atkinson",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    },
+    "CHANGE-88788": {
+      "status": "Done",
+      "assignee": "Sarahi Mireles",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Sarahi Mireles",
+        "body": "Closing this ticket since the fix for this issue was validated in "
+      }
+    },
+    "CHANGE-88796": {
+      "status": "Ready to Test",
+      "assignee": "Oscar López",
+      "priority": "P2 - Significant",
+      "latestComment": {
+        "author": "Oscar López",
+        "body": ""
+      }
+    },
+    "CHANGE-87850": {
+      "status": "ToDo",
+      "assignee": "Unassigned",
+      "priority": "P2 - Significant",
+      "latestComment": null
+    }
+  },
   "amplitude": {},
   "sheets": {
     "qaTestPlan": {
