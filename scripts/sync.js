@@ -158,6 +158,167 @@ async function syncAmplitude() {
   return result;
 }
 
+// ─── Google Sheets sync ────────────────────────────────────────────────────────
+
+const SHEETS = {
+  qaTestPlan: {
+    url: 'https://docs.google.com/spreadsheets/d/1sigXxrV7IB2D27IAjiGmB2hHW6F7_DmN/export?format=csv&gid=642014652',
+    label: 'QA Test Plan',
+  },
+  translationTracking: {
+    url: 'https://docs.google.com/spreadsheets/d/1MZMLxVp_ZRmotExGS0gR-7m2qOcbWKub_tyxj3pWGBA/export?format=csv&gid=1015843822',
+    label: 'Translation Tracking',
+  },
+};
+
+// Map sheet locale headers → rolloutData.js market codes
+const LOCALE_TO_CODE = {
+  'deutsch': 'de',
+  'germany': 'de',
+  'de-de': 'de',
+  'australia': 'au',
+  'en-au': 'au',
+  'canada': 'ca',
+  'en-ca': 'ca',
+  'united kingdom': 'gb',
+  'en-gb': 'gb',
+  'india': 'in-eng',
+  'en-in': 'in-eng',
+  'español (espana': 'es',
+  'es-es': 'es',
+  'español (latinoamerica': 'mx',
+  'es-419': 'mx',
+  'español (argentina': 'ar',
+  'es-ar': 'ar',
+  'français': 'fr',
+  'fr-fr': 'fr',
+  'hindi': 'in-hi',
+  'hi-in': 'in-hi',
+  'bahasa indonesia': 'id',
+  'id-id': 'id',
+  'italiano': 'it',
+  'it-it': 'it',
+  '日本語': 'jp',
+  'ja-jp': 'jp',
+  'português': 'br',
+  'pt-br': 'br',
+  'pусский': 'ru',
+  'russia': 'ru',
+  'ru-ru': 'ru',
+  'ภาษาไทย': 'th',
+  'th-th': 'th',
+  'türkçe': 'tr',
+  'tr-tr': 'tr',
+};
+
+function detectMarket(row) {
+  const text = row[0]?.toLowerCase() ?? '';
+  for (const [key, code] of Object.entries(LOCALE_TO_CODE)) {
+    if (text.includes(key)) return code;
+  }
+  return null;
+}
+
+function classifyBug(text) {
+  const t = text.toLowerCase();
+  if (t.includes('translat') || t.includes('should be') || t.includes('incorrect') || t.includes('spelling') || t.includes('tense') || t.includes('plural') || t.includes('gender')) return 'translation';
+  return 'visual';
+}
+
+function parseQATestPlan(csv) {
+  const lines = csv.split('\n');
+  const bugs = {}; // marketCode → [{type, tag, text, page, section, status, retestDate, notes}]
+  let currentMarket = null;
+
+  for (const line of lines) {
+    // Parse CSV row (handle quoted fields)
+    const cols = line.match(/(".*?"|[^,]*)/g)?.map(c => c.replace(/^"|"$/g, '').trim()) ?? [];
+    if (!cols.length) continue;
+
+    // Detect market header row
+    const market = detectMarket(cols);
+    if (market) { currentMarket = market; continue; }
+
+    // Skip headers, empty rows, end markers
+    const issue = cols[0];
+    if (!issue || issue === 'Issue' || issue === 'End of Section' || issue.startsWith('[Global')) continue;
+
+    // Skip rows that are just dashes (no issue)
+    const retestStatus = cols[5]?.trim();
+    if (issue === '' && retestStatus !== 'Pass') continue;
+    if (!currentMarket || !issue) continue;
+
+    if (!bugs[currentMarket]) bugs[currentMarket] = [];
+
+    const isPassed = retestStatus === 'Pass';
+    bugs[currentMarket].push({
+      type:       isPassed ? 'passed' : classifyBug(issue),
+      tag:        isPassed ? 'P' : classifyBug(issue) === 'translation' ? 'T' : 'V',
+      text:       issue,
+      page:       cols[2] || null,
+      section:    cols[3] || null,
+      status:     isPassed ? 'passed' : (cols[7]?.toLowerCase().includes('filed') ? 'filed' : 'open'),
+      retestDate: cols[6] || null,
+      notes:      cols[7] || null,
+    });
+  }
+  return bugs;
+}
+
+function parseTranslationTracking(csv) {
+  const lines = csv.split('\n');
+  const suggestions = []; // flat list — no market header in this sheet on this tab
+
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].match(/(".*?"|[^,]*)/g)?.map(c => c.replace(/^"|"$/g, '').trim()) ?? [];
+    const issue = cols[0];
+    if (!issue) continue;
+    suggestions.push({
+      tab:         cols[0] || null,
+      section:     cols[1] || null,
+      component:   cols[2] || null,
+      currentText: cols[3] || null,
+      suggested:   cols[4] || null,
+      issueDesc:   cols[5] || null,
+      blocking:    cols[6] || null,
+      fixed:       cols[7] || null,
+    });
+  }
+  return suggestions;
+}
+
+async function fetchSheetCSV(url) {
+  // Google Sheets export redirects — follow the redirect
+  const res1 = await fetch(url, { redirect: 'follow' });
+  if (!res1.ok) throw new Error(`Sheet fetch failed: ${res1.status}`);
+  return res1.text();
+}
+
+async function syncSheets() {
+  const result = { qaTestPlan: {}, translationSuggestions: [] };
+
+  try {
+    console.log('  Fetching QA Test Plan...');
+    const csv1 = await fetchSheetCSV(SHEETS.qaTestPlan.url);
+    result.qaTestPlan = parseQATestPlan(csv1);
+    const total = Object.values(result.qaTestPlan).reduce((s, arr) => s + arr.length, 0);
+    console.log(`  ✓ QA Test Plan: ${total} issues across ${Object.keys(result.qaTestPlan).length} markets`);
+  } catch (e) {
+    console.error(`  ✗ QA Test Plan: ${e.message}`);
+  }
+
+  try {
+    console.log('  Fetching Translation Tracking...');
+    const csv2 = await fetchSheetCSV(SHEETS.translationTracking.url);
+    result.translationSuggestions = parseTranslationTracking(csv2);
+    console.log(`  ✓ Translation Tracking: ${result.translationSuggestions.length} suggestions`);
+  } catch (e) {
+    console.error(`  ✗ Translation Tracking: ${e.message}`);
+  }
+
+  return result;
+}
+
 // ─── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('🔄 Syncing data sources...\n');
@@ -172,6 +333,7 @@ async function main() {
     lastSynced: new Date().toISOString(),
     jira:      existing.jira      ?? {},
     amplitude: existing.amplitude ?? {},
+    sheets:    existing.sheets    ?? {},
   };
 
   if (!missingJira) {
@@ -185,6 +347,9 @@ async function main() {
     const ampData = await syncAmplitude();
     output.amplitude = { ...existing.amplitude, ...ampData };
   }
+
+  console.log('\n📝 Fetching Google Sheets...');
+  output.sheets = await syncSheets();
 
   writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
   console.log(`\n✅ syncedData.json updated (${new Date().toLocaleTimeString()})`);

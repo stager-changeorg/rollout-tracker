@@ -35,11 +35,19 @@ function formatKpiValue(raw, existingValue) {
   return `${Math.round(raw)}`;
 }
 
+function applySheetBugs(market) {
+  const sheetBugs = synced.sheets?.qaTestPlan?.[market.code];
+  if (!sheetBugs?.length) return market.bugs;
+  // Merge: sheet bugs are authoritative for open/filed/passed status
+  return sheetBugs.map(b => ({ type: b.type, tag: b.tag, text: b.text, status: b.status, page: b.page, notes: b.notes }));
+}
+
 function syncMarket(market) {
   return {
     ...market,
     jiraTickets:  applyJiraSync(market.jiraTickets),
     linkedBugs:   applyJiraSync(market.linkedBugs),
+    bugs:         applySheetBugs(market),
     analyticsData: market.analyticsData
       ? { ...market.analyticsData, kpis: applyAmplitudeSync(market.analyticsData.kpis) }
       : market.analyticsData,

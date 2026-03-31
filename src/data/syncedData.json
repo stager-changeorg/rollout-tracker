@@ -1,5 +1,464 @@
 {
-  "lastSynced": null,
+  "lastSynced": "2026-03-31T17:12:50.921Z",
   "jira": {},
-  "amplitude": {}
+  "amplitude": {},
+  "sheets": {
+    "qaTestPlan": {
+      "de": [
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Untranslated English strings",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Text and line wrapping issues",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Alignment issues between background box and Download poster button",
+          "page": null,
+          "section": "Share tab",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Noun not capitalized:",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "should be \"\"Inhalt der Petition\"",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect word break hyphenation",
+          "page": null,
+          "section": "Edit petition page",
+          "status": "open",
+          "retestDate": "Petitionsstärke",
+          "notes": "card In carousel"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "should be \"\"Ver-bes-se-rungs-po-ten-zi-al\"\"",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Mobile",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "ca": [
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "neighborhood should be neighbourhood",
+          "page": null,
+          "section": "Share",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "gb": [
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Missing task items from Next Steps module",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "in-eng": [
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Spelling",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": "-",
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Energize should be Energise",
+          "page": null,
+          "section": "Post an update",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "personalized should be personalised",
+          "page": null,
+          "section": "Share",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "neighborhood should be neighbourhood",
+          "page": null,
+          "section": "Share",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "we'e should be we're (typo)",
+          "page": null,
+          "section": "Contact DM",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Please enter a description of your victory should be Kindly enter a description of your victory",
+          "page": null,
+          "section": "Declare Victory",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Left & right side columns are not equal width",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Missing task items from Next Steps module",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "mx": [
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Mexico - Petition activity link counter badge still displays after new activity has been viewed",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Buttons are not same height",
+          "page": null,
+          "section": "Home",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Mismatched country/locale combination English translation  for",
+          "page": "when setto country_code=ca, locale=es-419",
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": "Pay with Card - Card input placeholder"
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Screen jumps/stutters while scrolling",
+          "page": null,
+          "section": "Home tab",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "fr": [
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect text wrapping",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": "Improve rating card"
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Text wrapping:",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": "Comments panel"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect currency symbol:",
+          "page": "using a dollar sign. should be",
+          "section": "Pour 5 €",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Home tab - task list"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect Signatures badge number count",
+          "page": null,
+          "section": "Petition Activity page",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect translation:",
+          "page": "should be",
+          "section": "Publier la mise à jour",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Post an update tab"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect translation:",
+          "page": "should be",
+          "section": "Télécharger la liste",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect plural form:",
+          "page": "Montrez ce code QR au personnes...",
+          "section": "should be",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect plural form:",
+          "page": "should be",
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Incorrect plural form: Plus que 1...",
+          "page": null,
+          "section": "Plus qu'une...",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Home tab -Petition overview"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Inccorrect tense:",
+          "page": "should be",
+          "section": "...a commenté il y a 15 minutes",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Home tab - Supporter Activity module"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Translation Inconsistency:",
+          "page": "(modal) should be",
+          "section": "Télécharger une affiche",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Download Poster modal"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Gender Inconsistency:",
+          "page": ",",
+          "section": "un-e",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        }
+      ],
+      "ru": [
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Text overflow issues - nav bar",
+          "page": null,
+          "section": "Home tab",
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Currency is not localized:",
+          "page": "should be",
+          "section": "25 ₽",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Home tab"
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Button text is truncated",
+          "page": "should be",
+          "section": "Редактировать",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Share tab"
+        },
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "‘99+ создать’ translates as ‘create’ should be",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "one {# новая}",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "few {# новые}",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "many {# новых}",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "other {# новых}",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "}'",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": null,
+          "notes": null
+        },
+        {
+          "type": "visual",
+          "tag": "V",
+          "text": "Missing words to finsih sentence:",
+          "page": "should be",
+          "section": "Мы покажем это пользователям, которые, вероятно, захотят на и через .",
+          "status": "open",
+          "retestDate": null,
+          "notes": "Share tab"
+        }
+      ]
+    },
+    "translationSuggestions": []
+  }
 }
