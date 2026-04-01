@@ -1,142 +1,228 @@
 {
-  "lastSynced": "2026-04-01T18:07:46.130Z",
+  "lastSynced": "2026-04-01T20:56:19.646Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:45.570-0700",
+      "createdAt": "2026-03-02T16:33:41.752-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (España) (",
       "latestComment": null
     },
     "CHANGE-88891": {
       "status": "Closed",
       "assignee": "Oscar López",
+      "assigneeEmail": "olopez@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-18T07:07:23.685-0700",
+      "createdAt": "2026-03-17T10:15:27.046-0700",
+      "description": "Description Next Steps module is only showing 4 tasks to be completed, when there should be 9 in total. Prerequisites Reproducibility Steps to reproduce Login to account settings Set country to United Kingdom(gb), and language to English-United Kingdom(en-gb) Go to petition dashboard on home tab Notice tasks in Next Steps module task list Expected outcome The badge counter should say “x/9” tasks, and when clicking View more link, should expand to display 9 task items in total. Actual outcome The",
       "latestComment": {
         "author": "Courtney Atkinson",
-        "body": "QA is moving to Closed against smir demo env for all browsers on both desktop and mobile devices."
+        "body": "QA is moving to Closed against smir demo env for all browsers on both desktop and mobile devices. Issues resolved and validated for the locale en-gb No additional issues discovered.",
+        "created": "2026-03-17T12:28:28.390-0700"
       }
     },
     "CHANGE-87841": {
       "status": "Done",
       "assignee": "Olga Fetisova",
+      "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-31T10:09:41.855-0700",
+      "createdAt": "2026-03-02T16:32:11.849-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Français (Canada) ",
       "latestComment": {
         "author": "Oscar López",
-        "body": "Context: "
+        "body": "Context: https://change.slack.com/archives/C0AH359Q5C5/p1774913770735459",
+        "created": "2026-03-31T10:09:41.659-0700"
       }
     },
     "CHANGE-87842": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:44.842-0700",
+      "createdAt": "2026-03-02T16:32:44.870-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Português (Brasil)",
       "latestComment": null
     },
     "CHANGE-87848": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:46.255-0700",
+      "createdAt": "2026-03-02T16:34:31.170-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Bahasa Indonesia (",
       "latestComment": null
     },
     "CHANGE-87835": {
       "status": "Done",
       "assignee": "Sarahi Mireles",
+      "assigneeEmail": "smireles@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-18T08:12:48.481-0700",
+      "createdAt": "2026-03-02T16:29:04.691-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: English (United Ki",
       "latestComment": {
         "author": "Courtney Atkinson",
-        "body": "QA is moving to Ready to Deploy against smir demo env"
+        "body": "QA is moving to Ready to Deploy against smir demo env A link to the specific tests is provided below: Global Rollout Testing Spreadsheet No issues were discovered for testing EN-GB, Great Britain",
+        "created": "2026-03-13T14:19:34.316-0700"
       }
     },
     "CHANGE-87839": {
       "status": "Implementation",
       "assignee": "Courtney Atkinson",
+      "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:47.389-0700",
+      "createdAt": "2026-03-02T16:31:44.431-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Deutsch (de-DE) / ",
       "latestComment": null
     },
     "CHANGE-87836": {
       "status": "Done",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-18T08:12:54.258-0700",
+      "createdAt": "2026-03-02T16:29:24.507-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: English (Canada)(e",
       "latestComment": null
     },
     "CHANGE-83693": {
       "status": "Implementation",
       "assignee": "Sarahi Mireles",
+      "assigneeEmail": "smireles@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-23T13:57:33.636-0700",
+      "createdAt": "2025-11-26T13:34:21.758-0800",
+      "description": null,
       "latestComment": null
     },
     "CHANGE-87840": {
       "status": "Closed",
       "assignee": "Courtney Atkinson",
+      "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-31T10:07:49.448-0700",
+      "createdAt": "2026-03-02T16:31:56.134-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Français (fr-FR) /",
       "latestComment": null
     },
     "CHANGE-87847": {
       "status": "ToDo",
       "assignee": "Courtney Atkinson",
+      "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:48.065-0700",
+      "createdAt": "2026-03-02T16:34:14.924-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: हिन्दी (Hindi) (hi",
       "latestComment": null
     },
     "CHANGE-83975": {
       "status": "Implementation",
       "assignee": "Oscar López",
+      "assigneeEmail": "olopez@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-01-27T11:14:15.885-0800",
+      "createdAt": "2025-12-03T11:01:03.082-0800",
+      "description": null,
       "latestComment": null
     },
     "CHANGE-87849": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:46.637-0700",
+      "createdAt": "2026-03-02T16:34:48.104-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Türkçe (Turkish) (",
       "latestComment": null
     },
     "CHANGE-89248": {
       "status": "Done",
       "assignee": "Sarahi Mireles",
+      "assigneeEmail": "smireles@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-31T11:17:43.017-0700",
+      "createdAt": "2026-03-23T14:37:35.359-0700",
+      "description": "Description The Next Steps check list item reads “\"Потратьте 5 долларов ...\" for country_code=ru , this should be displayed in Russian rubles (₽), not USD. This is both a localization and UX issue. The free promotion banner uses \"25 Р.\" — the official modern symbol for Russian rubles is ₽ . Prerequisites Have at least 25 signatures in order for notification banner to appear. Reproducibility Steps to reproduce Login to account settings and set country to Russia and locale to Русский Notice curren",
       "latestComment": {
         "author": "Sarahi Mireles",
-        "body": ""
+        "body": "this has been deployed to production. Is ready for you to take another look",
+        "created": "2026-03-31T11:17:43.017-0700"
       }
     },
     "CHANGE-87844": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:45.229-0700",
+      "createdAt": "2026-03-02T16:33:20.011-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Italiano (it-IT) /",
       "latestComment": null
     },
     "CHANGE-87846": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:45.900-0700",
+      "createdAt": "2026-03-02T16:34:00.230-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (Argentina",
       "latestComment": null
     },
     "CHANGE-87843": {
       "status": "ToDo",
       "assignee": "Courtney Atkinson",
+      "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:47.733-0700",
+      "createdAt": "2026-03-02T16:33:07.490-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: 日本語 (Japanese) (ja",
       "latestComment": null
     },
     "CHANGE-88788": {
       "status": "Done",
       "assignee": "Sarahi Mireles",
+      "assigneeEmail": "smireles@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-26T11:20:34.945-0700",
+      "createdAt": "2026-03-16T15:23:00.045-0700",
+      "description": "Description On the petition dashboard, the Petition strength card displays the message “Room for improvement” . The text wraps incorrectly, splitting the word “improvement” into two lines (e.g., improveme on one line and nt on the next). This appears to be caused by improper text wrapping or container width handling within the component. The text should wrap only at word boundaries or remain on a single line depending on the layout. The issue is visible in the Petition overview → Petition streng",
       "latestComment": {
         "author": "Sarahi Mireles",
-        "body": "Closing this ticket since the fix for this issue was validated in "
+        "body": "Closing this ticket since the fix for this issue was validated in",
+        "created": "2026-03-26T11:20:34.762-0700"
       }
     },
     "CHANGE-88796": {
       "status": "Ready to Test",
       "assignee": "Oscar López",
+      "assigneeEmail": "olopez@change.org",
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T12:04:36.525-0700",
+      "createdAt": "2026-03-16T15:56:25.089-0700",
+      "description": "Description “Neighborhood” should be “ neighbourhood” as Canadian English uses British spelling with a 'u' Prerequisites Reproducibility Steps to reproduce Set application locale to en-ca Open Starter Dashboard Review UI text elements across dashboard sections Expected outcome Text should follow British English spelling conventions for the en-ca locale. Actual outcome Tet is using American English spelling conventions. Additional notes",
       "latestComment": {
         "author": "Oscar López",
-        "body": ""
+        "body": "This is already fixed, please take a look at smir env https://www.smir.changeeng.org/",
+        "created": "2026-03-30T12:04:18.168-0700"
       }
     },
     "CHANGE-87850": {
       "status": "ToDo",
       "assignee": "Unassigned",
+      "assigneeEmail": null,
       "priority": "P2 - Significant",
+      "updatedAt": "2026-03-30T11:13:46.997-0700",
+      "createdAt": "2026-03-02T16:35:02.023-0800",
+      "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: ภาษาไทย (Thai) (th",
       "latestComment": null
     }
   },
@@ -172,9 +258,9 @@
         4063,
         4870,
         4997,
-        4076
+        4602
       ],
-      "latestRaw": 4076,
+      "latestRaw": 4602,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -208,10 +294,10 @@
         89,
         110,
         108,
-        108
+        115
       ],
-      "latestRaw": 108,
-      "trend": "neutral"
+      "latestRaw": 115,
+      "trend": "up"
     },
     "cagoy3ki": {
       "sparkline": [
@@ -244,10 +330,10 @@
         211,
         228,
         216,
-        186
+        221
       ],
-      "latestRaw": 186,
-      "trend": "down"
+      "latestRaw": 221,
+      "trend": "neutral"
     },
     "tkgv4edf": {
       "sparkline": [
@@ -280,9 +366,9 @@
         59,
         70,
         71,
-        55
+        64
       ],
-      "latestRaw": 55,
+      "latestRaw": 64,
       "trend": "down"
     },
     "821tb682": {
@@ -316,10 +402,10 @@
         397,
         460,
         477,
-        413
+        463
       ],
-      "latestRaw": 413,
-      "trend": "down"
+      "latestRaw": 463,
+      "trend": "neutral"
     },
     "19y8zw4l": {
       "sparkline": [
@@ -352,9 +438,9 @@
         42,
         46,
         54,
-        37
+        44
       ],
-      "latestRaw": 37,
+      "latestRaw": 44,
       "trend": "down"
     }
   },
@@ -709,6 +795,18 @@
           "section": "un-e",
           "status": "open",
           "retestDate": null,
+          "notes": null
+        }
+      ],
+      "jp": [
+        {
+          "type": "translation",
+          "tag": "T",
+          "text": "Missing translation: the Decision Makers section description appears in english",
+          "page": null,
+          "section": null,
+          "status": "open",
+          "retestDate": "-",
           "notes": null
         }
       ],

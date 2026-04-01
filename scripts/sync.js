@@ -61,7 +61,7 @@ const AMP_CHARTS = [
 async function fetchJiraIssue(key) {
   const auth = Buffer.from(`${JIRA_EMAIL}:${JIRA_TOKEN}`).toString('base64');
   const res = await fetch(
-    `${JIRA_BASE}/issue/${key}?fields=status,assignee,summary,priority,comment`,
+    `${JIRA_BASE}/issue/${key}?fields=status,assignee,summary,priority,comment,description,updated,created`,
     { headers: { Authorization: `Basic ${auth}`, Accept: 'application/json' } }
   );
   if (!res.ok) throw new Error(`Jira ${key}: HTTP ${res.status}`);
@@ -71,12 +71,30 @@ async function fetchJiraIssue(key) {
   const latestComment = comments.length
     ? comments[comments.length - 1]
     : null;
+
+  // Extract plain text from Atlassian Document Format description
+  function extractText(node) {
+    if (!node) return '';
+    if (node.type === 'text') return node.text ?? '';
+    if (node.content) return node.content.map(extractText).join(' ');
+    return '';
+  }
+  const descriptionText = extractText(fields.description).replace(/\s+/g, ' ').trim();
+
   return {
     status:        fields.status?.name ?? null,
     assignee:      fields.assignee?.displayName ?? 'Unassigned',
+    assigneeEmail: fields.assignee?.emailAddress ?? null,
     priority:      fields.priority?.name ?? null,
+    updatedAt:     fields.updated ?? null,
+    createdAt:     fields.created ?? null,
+    description:   descriptionText.slice(0, 500) || null,
     latestComment: latestComment
-      ? { author: latestComment.author?.displayName, body: latestComment.body?.content?.[0]?.content?.[0]?.text ?? '' }
+      ? {
+          author: latestComment.author?.displayName,
+          body: extractText(latestComment.body).replace(/\s+/g, ' ').trim().slice(0, 300),
+          created: latestComment.created ?? null,
+        }
       : null,
   };
 }

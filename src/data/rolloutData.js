@@ -6,7 +6,15 @@ function applyJiraSync(tickets) {
   return tickets.map(t => {
     const live = synced.jira?.[t.key];
     if (!live) return t;
-    return { ...t, status: live.status ?? t.status, assignee: live.assignee ?? t.assignee };
+    return {
+      ...t,
+      status:        live.status      ?? t.status,
+      assignee:      live.assignee    ?? t.assignee,
+      priority:      live.priority    ?? t.priority,
+      updatedAt:     live.updatedAt   ?? t.updatedAt,
+      description:   live.description ?? t.description,
+      latestComment: live.latestComment ?? t.latestComment,
+    };
   });
 }
 

@@ -56,42 +56,110 @@ function statusColor(status) {
   return '#d97706';
 }
 
+function priorityColor(priority) {
+  if (!priority) return '#9ca3af';
+  const p = priority.toLowerCase();
+  if (p === 'p1' || p === 'highest' || p === 'critical') return '#dc2626';
+  if (p === 'p2' || p === 'high') return '#ea580c';
+  if (p === 'p3' || p === 'medium') return '#d97706';
+  return '#6b7280';
+}
+
+function formatRelativeDate(iso) {
+  if (!iso) return null;
+  const d = new Date(iso);
+  const now = new Date();
+  const diffMs = now - d;
+  const diffDays = Math.floor(diffMs / 86400000);
+  if (diffDays === 0) return 'today';
+  if (diffDays === 1) return 'yesterday';
+  if (diffDays < 7) return `${diffDays}d ago`;
+  if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
 function JiraTicketRow({ ticket, relation }) {
   const color = statusColor(ticket.status);
+  const pColor = priorityColor(ticket.priority);
+  const hasDetails = ticket.description || ticket.latestComment;
+
   return (
-    <a href={ticket.url} target="_blank" rel="noopener noreferrer" className="jira-ticket-row">
-      <span className="jira-key">{ticket.key}</span>
-      <span className="jira-summary">{ticket.summary}</span>
-      {relation && <span className="jira-relation">{relation}</span>}
-      <span className="jira-status" style={{ color, borderColor: color + '44', background: color + '11' }}>
-        {ticket.status}
-      </span>
-      <span className="jira-assignee">{ticket.assignee}</span>
-    </a>
+    <div className="jira-ticket-card">
+      <a href={ticket.url} target="_blank" rel="noopener noreferrer" className="jira-ticket-row">
+        <span className="jira-key">{ticket.key}</span>
+        <span className="jira-summary">{ticket.summary}</span>
+        {relation && <span className="jira-relation">{relation}</span>}
+        <div className="jira-ticket-meta">
+          {ticket.priority && (
+            <span className="jira-priority" style={{ color: pColor, borderColor: pColor + '44', background: pColor + '11' }}>
+              {ticket.priority}
+            </span>
+          )}
+          <span className="jira-status" style={{ color, borderColor: color + '44', background: color + '11' }}>
+            {ticket.status}
+          </span>
+          <span className="jira-assignee">{ticket.assignee}</span>
+          {ticket.updatedAt && (
+            <span className="jira-updated">updated {formatRelativeDate(ticket.updatedAt)}</span>
+          )}
+        </div>
+      </a>
+      {hasDetails && (
+        <div className="jira-ticket-details">
+          {ticket.description && (
+            <div className="jira-description">{ticket.description}</div>
+          )}
+          {ticket.latestComment && (
+            <div className="jira-comment">
+              <span className="jira-comment-author">{ticket.latestComment.author}</span>
+              <span className="jira-comment-date">{formatRelativeDate(ticket.latestComment.created)}</span>
+              <span className="jira-comment-body">{ticket.latestComment.body}</span>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
 
 function BugTicketRow({ ticket }) {
   const color = statusColor(ticket.status);
+  const pColor = priorityColor(ticket.priority);
   const isOpen = ticket.status !== 'Closed' && ticket.status !== 'Done';
   return (
-    <a href={ticket.url} target="_blank" rel="noopener noreferrer" className="bug-ticket-row">
-      <div className="bug-ticket-top">
-        <span className="bug-ticket-key">{ticket.key}</span>
-        {isOpen && <span className="bug-ticket-critical">CRITICAL</span>}
-        <span className="bug-ticket-priority">{ticket.priority}</span>
-        <span
-          className="bug-ticket-status"
-          style={{ color, borderColor: color + '55', background: color + '15' }}
-        >
-          {ticket.status}
-        </span>
-      </div>
-      <div className="bug-ticket-summary">{ticket.summary}</div>
-      {ticket.assignee && (
-        <div className="bug-ticket-assignee">Assigned to {ticket.assignee}</div>
+    <div className="bug-ticket-card">
+      <a href={ticket.url} target="_blank" rel="noopener noreferrer" className="bug-ticket-row">
+        <div className="bug-ticket-top">
+          <span className="bug-ticket-key">{ticket.key}</span>
+          {isOpen && <span className="bug-ticket-critical">OPEN</span>}
+          {ticket.priority && (
+            <span className="bug-ticket-priority" style={{ color: pColor, borderColor: pColor + '44', background: pColor + '11' }}>
+              {ticket.priority}
+            </span>
+          )}
+          <span
+            className="bug-ticket-status"
+            style={{ color, borderColor: color + '55', background: color + '15' }}
+          >
+            {ticket.status}
+          </span>
+          {ticket.updatedAt && (
+            <span className="jira-updated">updated {formatRelativeDate(ticket.updatedAt)}</span>
+          )}
+        </div>
+        <div className="bug-ticket-summary">{ticket.summary}</div>
+        {ticket.assignee && (
+          <div className="bug-ticket-assignee">Assigned to {ticket.assignee}</div>
+        )}
+      </a>
+      {ticket.latestComment && (
+        <div className="jira-comment" style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+          <span className="jira-comment-author">{ticket.latestComment.author}</span>
+          <span className="jira-comment-date">{formatRelativeDate(ticket.latestComment.created)}</span>
+          <span className="jira-comment-body">{ticket.latestComment.body}</span>
+        </div>
       )}
-    </a>
+    </div>
   );
 }
 
