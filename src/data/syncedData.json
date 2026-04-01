@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-01T00:02:43.382Z",
+  "lastSynced": "2026-04-01T06:18:18.290Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -172,9 +172,9 @@
         4063,
         4870,
         4997,
-        28
+        1435
       ],
-      "latestRaw": 28,
+      "latestRaw": 1435,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -208,9 +208,9 @@
         89,
         110,
         108,
-        0
+        29
       ],
-      "latestRaw": 0,
+      "latestRaw": 29,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -244,9 +244,9 @@
         211,
         228,
         216,
-        0
+        30
       ],
-      "latestRaw": 0,
+      "latestRaw": 30,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -280,9 +280,9 @@
         59,
         70,
         71,
-        0
+        14
       ],
-      "latestRaw": 0,
+      "latestRaw": 14,
       "trend": "down"
     },
     "821tb682": {
@@ -316,9 +316,9 @@
         397,
         460,
         477,
-        0
+        71
       ],
-      "latestRaw": 0,
+      "latestRaw": 71,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -352,9 +352,9 @@
         42,
         46,
         54,
-        1
+        29
       ],
-      "latestRaw": 1,
+      "latestRaw": 29,
       "trend": "down"
     }
   },
@@ -819,7 +819,7 @@
       {
         "tab": "ホーム",
         "section": null,
-        "component": "署名活動の概要",
+        "component": "Petition overview/署名活動の概要",
         "currentText": null,
         "suggested": "Link text",
         "issueDesc": null,
@@ -827,9 +827,19 @@
         "fixed": null
       },
       {
-        "tab": "オンライン署名をシェアする",
+        "tab": "Align with Japanese product terminology",
         "section": null,
-        "component": "ソーシャルメディア用コンテンツ",
+        "component": null,
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": null,
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "Share Petition/オンライン署名をシェアする",
+        "section": null,
+        "component": "Social media content/ソーシャルメディア用コンテンツ",
         "currentText": null,
         "suggested": "headline",
         "issueDesc": null,
@@ -839,6 +849,26 @@
       {
         "tab": "Change.orgのサイト上およびEメールを使って、賛同を得られそうな人々に対してこの署名ページを表示します。",
         "section": null,
+        "component": "「プロモーション支援」で応援すると、Change.orgのサイト内やメール配信での表示回数がアップします。わずかな額でもたくさんの方からご支援があれば、数千、数万人の方々に、このオンライン署名を知らせることができます。",
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": null,
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "この機能は、賛同者はもちろん、あなた自身も利用できます。",
+        "section": null,
+        "component": "Align with Japanese product terminology",
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": null,
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "Adjust tone for Japanese UX",
+        "section": null,
         "component": null,
         "currentText": null,
         "suggested": null,
@@ -847,24 +877,44 @@
         "fixed": null
       },
       {
-        "tab": "意思決定者に連絡する",
+        "tab": "Contact decision makers/意思決定者に連絡する",
         "section": null,
         "component": null,
         "currentText": "headline",
         "suggested": null,
         "issueDesc": "影響力のある人に連絡する",
         "blocking": null,
+        "fixed": "意思決定者に連絡する"
+      },
+      {
+        "tab": "Adjust tone for Japanese UX",
+        "section": null,
+        "component": null,
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": null,
+        "blocking": null,
         "fixed": null
       },
       {
-        "tab": "最新情報を投稿する",
+        "tab": "Adjust tone for Japanese UX",
         "section": null,
         "component": null,
-        "currentText": "headline",
+        "currentText": null,
         "suggested": null,
-        "issueDesc": "賛同者から支援者になってもらう",
+        "issueDesc": null,
         "blocking": null,
         "fixed": null
+      },
+      {
+        "tab": "Post an update/最新情報を投稿する",
+        "section": null,
+        "component": null,
+        "currentText": "Tab copy",
+        "suggested": null,
+        "issueDesc": "最新情報を投稿する",
+        "blocking": null,
+        "fixed": "お知らせ投稿をする"
       },
       {
         "tab": "署名ページを編集",
@@ -874,7 +924,7 @@
         "suggested": null,
         "issueDesc": "署名ページを編集",
         "blocking": null,
-        "fixed": null
+        "fixed": "署名ページを編集する"
       },
       {
         "tab": "/activity/signatures",
