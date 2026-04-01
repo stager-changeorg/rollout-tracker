@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-03-31T22:07:20.466Z",
+  "lastSynced": "2026-04-01T00:02:43.382Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -143,7 +143,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        4513,
         4621,
         4648,
         4732,
@@ -172,14 +171,14 @@
         4282,
         4063,
         4870,
-        4726
+        4997,
+        28
       ],
-      "latestRaw": 4726,
-      "trend": "neutral"
+      "latestRaw": 28,
+      "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        88,
         94,
         69,
         78,
@@ -208,14 +207,14 @@
         96,
         89,
         110,
-        107
+        108,
+        0
       ],
-      "latestRaw": 107,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        241,
         243,
         249,
         262,
@@ -244,14 +243,14 @@
         199,
         211,
         228,
-        209
+        216,
+        0
       ],
-      "latestRaw": 209,
+      "latestRaw": 0,
       "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        83,
         74,
         86,
         86,
@@ -280,14 +279,14 @@
         63,
         59,
         70,
-        70
+        71,
+        0
       ],
-      "latestRaw": 70,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "821tb682": {
       "sparkline": [
-        441,
         465,
         495,
         528,
@@ -316,14 +315,14 @@
         410,
         397,
         460,
-        452
+        477,
+        0
       ],
-      "latestRaw": 452,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "19y8zw4l": {
       "sparkline": [
-        56,
         45,
         45,
         38,
@@ -352,10 +351,11 @@
         56,
         42,
         46,
-        45
+        54,
+        1
       ],
-      "latestRaw": 45,
-      "trend": "neutral"
+      "latestRaw": 1,
+      "trend": "down"
     }
   },
   "sheets": {
@@ -815,6 +815,77 @@
         }
       ]
     },
-    "translationSuggestions": []
+    "translationSuggestions": [
+      {
+        "tab": "ホーム",
+        "section": null,
+        "component": "署名活動の概要",
+        "currentText": null,
+        "suggested": "Link text",
+        "issueDesc": null,
+        "blocking": "オンライン署名活動",
+        "fixed": null
+      },
+      {
+        "tab": "オンライン署名をシェアする",
+        "section": null,
+        "component": "ソーシャルメディア用コンテンツ",
+        "currentText": null,
+        "suggested": "headline",
+        "issueDesc": null,
+        "blocking": "ソーシャルメディア用コンテンツ",
+        "fixed": null
+      },
+      {
+        "tab": "Change.orgのサイト上およびEメールを使って、賛同を得られそうな人々に対してこの署名ページを表示します。",
+        "section": null,
+        "component": null,
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": null,
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "意思決定者に連絡する",
+        "section": null,
+        "component": null,
+        "currentText": "headline",
+        "suggested": null,
+        "issueDesc": "影響力のある人に連絡する",
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "最新情報を投稿する",
+        "section": null,
+        "component": null,
+        "currentText": "headline",
+        "suggested": null,
+        "issueDesc": "賛同者から支援者になってもらう",
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "署名ページを編集",
+        "section": null,
+        "component": "署名ページを編集",
+        "currentText": null,
+        "suggested": null,
+        "issueDesc": "署名ページを編集",
+        "blocking": null,
+        "fixed": null
+      },
+      {
+        "tab": "/activity/signatures",
+        "section": null,
+        "component": "オンライン署名活動",
+        "currentText": null,
+        "suggested": "headline",
+        "issueDesc": null,
+        "blocking": "オンライン署名活動",
+        "fixed": null
+      }
+    ]
   }
 }
