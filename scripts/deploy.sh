@@ -26,6 +26,8 @@ EOF
 
 echo "Deploying..."
 cd "$DEPLOY_DIR"
+git fetch origin gh-pages
+git reset --hard origin/gh-pages
 rm -rf *
 cp -r "$DIST/." .
 git add -A
