@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-01T23:25:17.847Z",
+  "lastSynced": "2026-04-02T05:28:42.450Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -182,7 +182,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T15:16:57.035-0700",
+      "updatedAt": "2026-04-01T16:47:48.299-0700",
       "createdAt": "2026-03-02T16:33:07.490-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: 日本語 (Japanese) (ja",
       "latestComment": null
@@ -229,7 +229,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        4621,
         4648,
         4732,
         4529,
@@ -258,14 +257,14 @@
         4063,
         4870,
         4997,
-        5002
+        5069,
+        1245
       ],
-      "latestRaw": 5002,
-      "trend": "neutral"
+      "latestRaw": 1245,
+      "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        94,
         69,
         78,
         86,
@@ -294,14 +293,14 @@
         89,
         110,
         108,
-        115
+        115,
+        14
       ],
-      "latestRaw": 115,
-      "trend": "up"
+      "latestRaw": 14,
+      "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        243,
         249,
         262,
         252,
@@ -330,14 +329,14 @@
         211,
         228,
         216,
-        233
+        235,
+        46
       ],
-      "latestRaw": 233,
-      "trend": "up"
+      "latestRaw": 46,
+      "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        74,
         86,
         86,
         78,
@@ -366,14 +365,14 @@
         59,
         70,
         71,
-        64
+        64,
+        8
       ],
-      "latestRaw": 64,
+      "latestRaw": 8,
       "trend": "down"
     },
     "821tb682": {
       "sparkline": [
-        465,
         495,
         528,
         493,
@@ -402,14 +401,14 @@
         397,
         460,
         477,
-        495
+        500,
+        41
       ],
-      "latestRaw": 495,
-      "trend": "neutral"
+      "latestRaw": 41,
+      "trend": "down"
     },
     "19y8zw4l": {
       "sparkline": [
-        45,
         45,
         38,
         52,
@@ -438,10 +437,11 @@
         42,
         46,
         54,
-        53
+        55,
+        18
       ],
-      "latestRaw": 53,
-      "trend": "neutral"
+      "latestRaw": 18,
+      "trend": "down"
     }
   },
   "sheets": {
