@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-02T05:28:42.450Z",
+  "lastSynced": "2026-04-02T08:40:50.217Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -118,7 +118,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T14:41:45.091-0700",
+      "updatedAt": "2026-04-01T23:19:18.459-0700",
       "createdAt": "2026-03-02T16:34:14.924-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: हिन्दी (Hindi) (hi",
       "latestComment": null
@@ -258,9 +258,9 @@
         4870,
         4997,
         5069,
-        1245
+        1936
       ],
-      "latestRaw": 1245,
+      "latestRaw": 1936,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -294,9 +294,9 @@
         110,
         108,
         115,
-        14
+        38
       ],
-      "latestRaw": 14,
+      "latestRaw": 38,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -330,9 +330,9 @@
         228,
         216,
         235,
-        46
+        104
       ],
-      "latestRaw": 46,
+      "latestRaw": 104,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -366,9 +366,9 @@
         70,
         71,
         64,
-        8
+        16
       ],
-      "latestRaw": 8,
+      "latestRaw": 16,
       "trend": "down"
     },
     "821tb682": {
@@ -402,9 +402,9 @@
         460,
         477,
         500,
-        41
+        133
       ],
-      "latestRaw": 41,
+      "latestRaw": 133,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -438,9 +438,9 @@
         46,
         54,
         55,
-        18
+        20
       ],
-      "latestRaw": 18,
+      "latestRaw": 20,
       "trend": "down"
     }
   },
