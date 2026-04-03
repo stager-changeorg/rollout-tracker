@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-03T19:53:55.933Z",
+  "lastSynced": "2026-04-03T22:00:32.524Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -202,17 +202,17 @@
       }
     },
     "CHANGE-88796": {
-      "status": "Ready to Test",
+      "status": "Ready to Deploy",
       "assignee": "Oscar López",
       "assigneeEmail": "olopez@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T14:41:47.828-0700",
+      "updatedAt": "2026-04-03T13:06:58.837-0700",
       "createdAt": "2026-03-16T15:56:25.089-0700",
       "description": "Description “Neighborhood” should be “ neighbourhood” as Canadian English uses British spelling with a 'u' Prerequisites Reproducibility Steps to reproduce Set application locale to en-ca Open Starter Dashboard Review UI text elements across dashboard sections Expected outcome Text should follow British English spelling conventions for the en-ca locale. Actual outcome Tet is using American English spelling conventions. Additional notes",
       "latestComment": {
-        "author": "Oscar López",
-        "body": "This is already fixed, please take a look at smir env https://www.smir.changeeng.org/",
-        "created": "2026-03-30T12:04:18.168-0700"
+        "author": "Courtney Atkinson",
+        "body": "QA is moving to Ready to Deploy against smir demo env Issues resolved and validated No additional issues discovered",
+        "created": "2026-04-03T13:06:58.837-0700"
       }
     },
     "CHANGE-87850": {
