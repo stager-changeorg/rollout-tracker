@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-08T23:23:35.505Z",
+  "lastSynced": "2026-04-09T00:03:14.970Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -233,7 +233,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        8645,
         15172,
         11045,
         7904,
@@ -262,14 +261,14 @@
         3705,
         4403,
         4905,
-        4510
+        4800,
+        25
       ],
-      "latestRaw": 4510,
+      "latestRaw": 25,
       "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        316,
         1052,
         820,
         546,
@@ -298,14 +297,14 @@
         110,
         137,
         194,
-        120
+        121,
+        0
       ],
-      "latestRaw": 120,
+      "latestRaw": 0,
       "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        294,
         350,
         292,
         294,
@@ -334,14 +333,14 @@
         218,
         228,
         258,
-        258
+        262,
+        0
       ],
-      "latestRaw": 258,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        75,
         112,
         93,
         78,
@@ -370,14 +369,14 @@
         78,
         75,
         66,
-        62
+        63,
+        0
       ],
-      "latestRaw": 62,
+      "latestRaw": 0,
       "trend": "down"
     },
     "821tb682": {
       "sparkline": [
-        601,
         646,
         610,
         545,
@@ -406,14 +405,14 @@
         395,
         401,
         468,
-        406
+        424,
+        2
       ],
-      "latestRaw": 406,
+      "latestRaw": 2,
       "trend": "down"
     },
     "19y8zw4l": {
       "sparkline": [
-        81,
         184,
         151,
         120,
@@ -442,10 +441,11 @@
         32,
         49,
         42,
-        40
+        48,
+        1
       ],
-      "latestRaw": 40,
-      "trend": "neutral"
+      "latestRaw": 1,
+      "trend": "down"
     }
   },
   "sheets": {
