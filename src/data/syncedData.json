@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-10T23:19:31.283Z",
+  "lastSynced": "2026-04-11T00:04:00.118Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -233,7 +233,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        11045,
         7904,
         6888,
         8150,
@@ -262,14 +261,14 @@
         4905,
         4800,
         4803,
-        4677
+        4736,
+        32
       ],
-      "latestRaw": 4677,
-      "trend": "neutral"
+      "latestRaw": 32,
+      "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        820,
         546,
         421,
         409,
@@ -298,14 +297,14 @@
         194,
         121,
         154,
-        143
+        143,
+        0
       ],
-      "latestRaw": 143,
+      "latestRaw": 0,
       "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        292,
         294,
         245,
         260,
@@ -334,14 +333,14 @@
         258,
         262,
         248,
-        272
+        274,
+        1
       ],
-      "latestRaw": 272,
-      "trend": "up"
+      "latestRaw": 1,
+      "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        93,
         78,
         74,
         73,
@@ -370,14 +369,14 @@
         66,
         63,
         74,
-        71
+        72,
+        0
       ],
-      "latestRaw": 71,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "821tb682": {
       "sparkline": [
-        610,
         545,
         488,
         471,
@@ -406,14 +405,14 @@
         468,
         424,
         439,
-        445
+        447,
+        0
       ],
-      "latestRaw": 445,
-      "trend": "neutral"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "19y8zw4l": {
       "sparkline": [
-        151,
         120,
         94,
         76,
@@ -442,10 +441,11 @@
         42,
         48,
         52,
-        67
+        68,
+        2
       ],
-      "latestRaw": 67,
-      "trend": "up"
+      "latestRaw": 2,
+      "trend": "down"
     }
   },
   "sheets": {
