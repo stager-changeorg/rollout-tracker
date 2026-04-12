@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-12T00:03:28.753Z",
+  "lastSynced": "2026-04-12T03:54:59.168Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -173,10 +173,10 @@
     },
     "CHANGE-87846": {
       "status": "ToDo",
-      "assignee": "Courtney Atkinson",
-      "assigneeEmail": "courtney.atkinson@change.org",
+      "assignee": "Olga Fetisova",
+      "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-06T11:55:10.425-0700",
+      "updatedAt": "2026-04-11T20:09:07.439-0700",
       "createdAt": "2026-03-02T16:34:00.230-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (Argentina",
       "latestComment": null
@@ -262,9 +262,9 @@
         4803,
         4736,
         4060,
-        29
+        787
       ],
-      "latestRaw": 29,
+      "latestRaw": 787,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -298,9 +298,9 @@
         154,
         143,
         121,
-        0
+        12
       ],
-      "latestRaw": 0,
+      "latestRaw": 12,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -334,9 +334,9 @@
         248,
         274,
         255,
-        0
+        16
       ],
-      "latestRaw": 0,
+      "latestRaw": 16,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -370,9 +370,9 @@
         74,
         72,
         47,
-        0
+        1
       ],
-      "latestRaw": 0,
+      "latestRaw": 1,
       "trend": "down"
     },
     "821tb682": {
@@ -406,9 +406,9 @@
         439,
         447,
         448,
-        2
+        42
       ],
-      "latestRaw": 2,
+      "latestRaw": 42,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -442,9 +442,9 @@
         52,
         68,
         60,
-        0
+        16
       ],
-      "latestRaw": 0,
+      "latestRaw": 16,
       "trend": "down"
     }
   },
