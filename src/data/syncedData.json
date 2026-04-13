@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-13T14:17:48.855Z",
+  "lastSynced": "2026-04-13T16:00:50.745Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -40,11 +40,11 @@
       }
     },
     "CHANGE-87842": {
-      "status": "ToDo",
+      "status": "Implementation",
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-10T12:07:09.139-0700",
+      "updatedAt": "2026-04-13T08:38:01.927-0700",
       "createdAt": "2026-03-02T16:32:44.870-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Português (Brasil)",
       "latestComment": null
@@ -377,38 +377,21 @@
     },
     "821tb682": {
       "sparkline": [
-        471,
-        553,
-        555,
-        539,
-        562,
-        492,
-        447,
-        444,
-        528,
-        550,
-        527,
-        527,
-        487,
-        410,
-        397,
-        460,
-        477,
-        500,
-        487,
-        400,
-        379,
-        395,
-        401,
-        468,
-        424,
-        439,
-        447,
-        448,
-        490,
-        301
+        1860,
+        1773,
+        1715,
+        1608,
+        1634,
+        1555,
+        1671,
+        1969,
+        1703,
+        1599,
+        1496,
+        1506,
+        340
       ],
-      "latestRaw": 301,
+      "latestRaw": 340,
       "trend": "down"
     },
     "19y8zw4l": {
