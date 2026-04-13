@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-13T20:35:56.303Z",
+  "lastSynced": "2026-04-13T21:30:03.318Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -142,7 +142,7 @@
       "assignee": "Unassigned",
       "assigneeEmail": null,
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T14:41:45.630-0700",
+      "updatedAt": "2026-04-13T14:05:30.018-0700",
       "createdAt": "2026-03-02T16:34:48.104-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Türkçe (Turkish) (",
       "latestComment": null
@@ -224,7 +224,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-06T11:55:15.707-0700",
+      "updatedAt": "2026-04-13T14:05:42.620-0700",
       "createdAt": "2026-03-02T16:35:02.023-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: ภาษาไทย (Thai) (th",
       "latestComment": null
