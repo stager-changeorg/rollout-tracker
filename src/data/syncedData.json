@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-14T12:45:18.591Z",
+  "lastSynced": "2026-04-14T15:03:01.803Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -220,11 +220,11 @@
       }
     },
     "CHANGE-87850": {
-      "status": "ToDo",
+      "status": "Implementation",
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-13T14:05:42.620-0700",
+      "updatedAt": "2026-04-14T07:44:28.753-0700",
       "createdAt": "2026-03-02T16:35:02.023-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: ภาษาไทย (Thai) (th",
       "latestComment": null
@@ -262,9 +262,9 @@
         4060,
         4130,
         5081,
-        2528
+        3373
       ],
-      "latestRaw": 2528,
+      "latestRaw": 3373,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -298,9 +298,9 @@
         121,
         104,
         163,
-        89
+        103
       ],
-      "latestRaw": 89,
+      "latestRaw": 103,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -334,9 +334,9 @@
         255,
         264,
         269,
-        150
+        201
       ],
-      "latestRaw": 150,
+      "latestRaw": 201,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -370,9 +370,9 @@
         47,
         50,
         86,
-        48
+        67
       ],
-      "latestRaw": 48,
+      "latestRaw": 67,
       "trend": "down"
     },
     "821tb682": {
@@ -425,9 +425,9 @@
         60,
         45,
         64,
-        28
+        32
       ],
-      "latestRaw": 28,
+      "latestRaw": 32,
       "trend": "down"
     }
   },
