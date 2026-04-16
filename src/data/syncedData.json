@@ -1,12 +1,12 @@
 {
-  "lastSynced": "2026-04-16T04:38:37.995Z",
+  "lastSynced": "2026-04-16T06:22:57.925Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
       "assignee": "Unassigned",
       "assigneeEmail": null,
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T14:41:44.479-0700",
+      "updatedAt": "2026-04-15T22:01:16.041-0700",
       "createdAt": "2026-03-02T16:33:41.752-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (España) (",
       "latestComment": null
