@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-20T11:06:25.986Z",
+  "lastSynced": "2026-04-20T12:48:55.994Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -389,9 +389,9 @@
         1496,
         1506,
         1666,
-        4
+        300
       ],
-      "latestRaw": 4,
+      "latestRaw": 300,
       "trend": "down"
     },
     "19y8zw4l": {
