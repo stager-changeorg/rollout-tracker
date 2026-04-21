@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-21T16:39:42.294Z",
+  "lastSynced": "2026-04-21T17:40:00.503Z",
   "jira": {
     "CHANGE-87845": {
       "status": "ToDo",
@@ -98,7 +98,7 @@
       "assignee": "Sarahi Mireles",
       "assigneeEmail": "smireles@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-03-23T13:57:33.636-0700",
+      "updatedAt": "2026-04-21T09:45:03.404-0700",
       "createdAt": "2025-11-26T13:34:21.758-0800",
       "description": null,
       "latestComment": null
@@ -262,9 +262,9 @@
         3957,
         4038,
         4861,
-        3130
+        3735
       ],
-      "latestRaw": 3130,
+      "latestRaw": 3735,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -298,10 +298,10 @@
         113,
         109,
         116,
-        103
+        123
       ],
-      "latestRaw": 103,
-      "trend": "down"
+      "latestRaw": 123,
+      "trend": "up"
     },
     "cagoy3ki": {
       "sparkline": [
@@ -334,9 +334,9 @@
         237,
         278,
         270,
-        212
+        243
       ],
-      "latestRaw": 212,
+      "latestRaw": 243,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -370,9 +370,9 @@
         58,
         59,
         71,
-        41
+        51
       ],
-      "latestRaw": 41,
+      "latestRaw": 51,
       "trend": "down"
     },
     "821tb682": {
@@ -425,9 +425,9 @@
         55,
         33,
         49,
-        34
+        40
       ],
-      "latestRaw": 34,
+      "latestRaw": 40,
       "trend": "down"
     }
   },
