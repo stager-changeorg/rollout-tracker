@@ -1,12 +1,12 @@
 {
-  "lastSynced": "2026-04-21T19:50:25.979Z",
+  "lastSynced": "2026-04-21T21:29:07.310Z",
   "jira": {
     "CHANGE-87845": {
-      "status": "ToDo",
-      "assignee": "Unassigned",
-      "assigneeEmail": null,
+      "status": "Implementation",
+      "assignee": "Olga Fetisova",
+      "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-15T22:01:16.041-0700",
+      "updatedAt": "2026-04-21T13:45:59.808-0700",
       "createdAt": "2026-03-02T16:33:41.752-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (España) (",
       "latestComment": null
@@ -50,11 +50,11 @@
       "latestComment": null
     },
     "CHANGE-87848": {
-      "status": "ToDo",
-      "assignee": "Unassigned",
-      "assigneeEmail": null,
+      "status": "Implementation",
+      "assignee": "Courtney Atkinson",
+      "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-17T16:11:08.743-0700",
+      "updatedAt": "2026-04-21T13:46:00.133-0700",
       "createdAt": "2026-03-02T16:34:31.170-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Bahasa Indonesia (",
       "latestComment": null
@@ -78,7 +78,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-01T14:41:42.682-0700",
+      "updatedAt": "2026-04-21T13:45:59.154-0700",
       "createdAt": "2026-03-02T16:31:44.431-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Deutsch (de-DE) / ",
       "latestComment": null
@@ -138,11 +138,11 @@
       "latestComment": null
     },
     "CHANGE-87849": {
-      "status": "ToDo",
+      "status": "Implementation",
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-13T18:49:32.495-0700",
+      "updatedAt": "2026-04-21T13:46:00.456-0700",
       "createdAt": "2026-03-02T16:34:48.104-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Türkçe (Turkish) (",
       "latestComment": null
@@ -162,11 +162,11 @@
       }
     },
     "CHANGE-87844": {
-      "status": "ToDo",
+      "status": "Implementation",
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-14T19:26:55.713-0700",
+      "updatedAt": "2026-04-21T13:45:59.505-0700",
       "createdAt": "2026-03-02T16:33:20.011-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Italiano (it-IT) /",
       "latestComment": null
@@ -182,14 +182,18 @@
       "latestComment": null
     },
     "CHANGE-87843": {
-      "status": "Implementation",
+      "status": "Closed",
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-08T12:14:07.996-0700",
+      "updatedAt": "2026-04-21T13:31:32.713-0700",
       "createdAt": "2026-03-02T16:33:07.490-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: 日本語 (Japanese) (ja",
-      "latestComment": null
+      "latestComment": {
+        "author": "Oscar López",
+        "body": "There are no more issues related to Japan",
+        "created": "2026-04-21T13:31:32.437-0700"
+      }
     },
     "CHANGE-88788": {
       "status": "Done",
