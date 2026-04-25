@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-25T06:10:00.697Z",
+  "lastSynced": "2026-04-25T07:53:18.641Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -266,9 +266,9 @@
         4931,
         4705,
         4611,
-        934
+        1491
       ],
-      "latestRaw": 934,
+      "latestRaw": 1491,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -302,9 +302,9 @@
         125,
         116,
         115,
-        12
+        27
       ],
-      "latestRaw": 12,
+      "latestRaw": 27,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -338,9 +338,9 @@
         302,
         273,
         254,
-        20
+        75
       ],
-      "latestRaw": 20,
+      "latestRaw": 75,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -374,9 +374,9 @@
         61,
         53,
         60,
-        6
+        13
       ],
-      "latestRaw": 6,
+      "latestRaw": 13,
       "trend": "down"
     },
     "821tb682": {
@@ -393,9 +393,9 @@
         1496,
         1506,
         1666,
-        1361
+        1410
       ],
-      "latestRaw": 1361,
+      "latestRaw": 1410,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -429,9 +429,9 @@
         51,
         48,
         47,
-        13
+        17
       ],
-      "latestRaw": 13,
+      "latestRaw": 17,
       "trend": "down"
     }
   },
