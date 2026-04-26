@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-25T23:21:43.393Z",
+  "lastSynced": "2026-04-26T01:12:27.052Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -237,7 +237,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        5116,
         4282,
         4063,
         4870,
@@ -266,14 +265,14 @@
         4931,
         4705,
         4611,
-        3775
+        3829,
+        338
       ],
-      "latestRaw": 3775,
+      "latestRaw": 338,
       "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        111,
         96,
         89,
         110,
@@ -302,14 +301,14 @@
         125,
         116,
         115,
-        71
+        71,
+        1
       ],
-      "latestRaw": 71,
+      "latestRaw": 1,
       "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        239,
         199,
         211,
         228,
@@ -338,14 +337,14 @@
         302,
         273,
         254,
-        225
+        226,
+        6
       ],
-      "latestRaw": 225,
+      "latestRaw": 6,
       "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        56,
         63,
         59,
         70,
@@ -374,9 +373,10 @@
         61,
         53,
         60,
-        43
+        43,
+        1
       ],
-      "latestRaw": 43,
+      "latestRaw": 1,
       "trend": "down"
     },
     "821tb682": {
@@ -400,7 +400,6 @@
     },
     "19y8zw4l": {
       "sparkline": [
-        44,
         56,
         42,
         46,
@@ -429,9 +428,10 @@
         51,
         48,
         47,
-        33
+        34,
+        4
       ],
-      "latestRaw": 33,
+      "latestRaw": 4,
       "trend": "down"
     }
   },
