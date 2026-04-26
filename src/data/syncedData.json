@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-26T20:20:39.860Z",
+  "lastSynced": "2026-04-26T21:20:26.971Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -266,9 +266,9 @@
         4705,
         4611,
         3829,
-        3177
+        3637
       ],
-      "latestRaw": 3177,
+      "latestRaw": 3637,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -302,9 +302,9 @@
         116,
         115,
         71,
-        91
+        99
       ],
-      "latestRaw": 91,
+      "latestRaw": 99,
       "trend": "up"
     },
     "cagoy3ki": {
@@ -338,10 +338,10 @@
         273,
         254,
         226,
-        207
+        226
       ],
-      "latestRaw": 207,
-      "trend": "down"
+      "latestRaw": 226,
+      "trend": "neutral"
     },
     "tkgv4edf": {
       "sparkline": [
@@ -374,10 +374,10 @@
         53,
         60,
         43,
-        39
+        49
       ],
-      "latestRaw": 39,
-      "trend": "down"
+      "latestRaw": 49,
+      "trend": "up"
     },
     "821tb682": {
       "sparkline": [
@@ -393,10 +393,10 @@
         1496,
         1506,
         1666,
-        1531
+        1627
       ],
-      "latestRaw": 1531,
-      "trend": "down"
+      "latestRaw": 1627,
+      "trend": "neutral"
     },
     "19y8zw4l": {
       "sparkline": [
@@ -429,10 +429,10 @@
         48,
         47,
         34,
-        35
+        39
       ],
-      "latestRaw": 35,
-      "trend": "neutral"
+      "latestRaw": 39,
+      "trend": "up"
     }
   },
   "sheets": {
