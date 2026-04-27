@@ -21,7 +21,10 @@ function applyJiraSync(tickets) {
 function applyAmplitudeSync(kpis) {
   if (!kpis?.length) return kpis;
   return kpis.map(kpi => {
-    const chartId = kpi.chartUrl?.split('/').pop();
+    // Extract chart ID from URL — preserve 'new/' prefix for new-editor charts
+    const urlParts = kpi.chartUrl?.split('/chart/');
+    const rawId = urlParts?.[1];
+    const chartId = rawId ?? kpi.chartUrl?.split('/').pop();
     const live = chartId && synced.amplitude?.[chartId];
     if (!live) return kpi;
     const formatted = formatKpiValue(live.latestRaw, kpi.value);
@@ -856,20 +859,29 @@ const _markets = {
     lang: '日本語',
     phase: 4,
     phaseColor: '#ea580c',
-    status: 'upcoming',
-    targetDate: 'Apr 2, 2026',
+    status: 'live',
+    launchDate: 'Apr 2, 2026',
     manager: 'AI Abe',
-    feedbackNote: 'QA underway as of Mar 31. Target launch: Thu Apr 2. Post-launch review via #watercooler.',
+    feedbackNote: 'Launched Apr 2, 2026. Post-launch review via #watercooler.',
+    amplitudeDashboardId: null,
+    analyticsData: {
+      lastUpdated: 'Apr 27, 2026',
+      dashboardUrl: null,
+      insights: [
+        { type: 'warning', text: 'Amplitude dashboard not yet configured for Japan — add dashboard ID and chart IDs to enable analytics tracking.' },
+      ],
+      kpis: [],
+    },
     pipeline: [
       { label: 'Translations', state: 'done' },
-      { label: 'QA Build', state: 'active', note: 'Courtney in progress' },
-      { label: 'Country Review', state: 'pending', note: 'Post-launch via #watercooler' },
-      { label: 'Launch', state: 'pending', note: 'Thu Apr 2' },
-      { label: 'Post-Launch Monitoring', state: 'pending' },
+      { label: 'QA Build', state: 'done', note: 'Courtney completed' },
+      { label: 'Country Review', state: 'active', note: 'Via #watercooler' },
+      { label: 'Launch', state: 'live', note: 'Apr 2, 2026' },
+      { label: 'Post-Launch Monitoring', state: 'active' },
     ],
     bugs: [],
     jiraTickets: [
-      { key: 'CHANGE-87843', summary: '[QA] Phase 4: Japan (JP)', status: 'ToDo', assignee: 'Courtney Atkinson', url: 'https://change.atlassian.net/browse/CHANGE-87843' },
+      { key: 'CHANGE-87843', summary: '[QA] Phase 4: Japan (JP)', status: 'Closed', assignee: 'Courtney Atkinson', url: 'https://change.atlassian.net/browse/CHANGE-87843' },
     ],
   },
 
@@ -880,20 +892,29 @@ const _markets = {
     lang: 'Hindi',
     phase: 4,
     phaseColor: '#ea580c',
-    status: 'upcoming',
-    targetDate: 'Apr 2, 2026',
+    status: 'live',
+    launchDate: 'Apr 2, 2026',
     manager: null,
-    feedbackNote: 'QA underway as of Mar 31. Target launch: Thu Apr 2. Post-launch review via #watercooler.',
+    feedbackNote: 'Launched Apr 2, 2026. Post-launch review via #watercooler.',
+    amplitudeDashboardId: null,
+    analyticsData: {
+      lastUpdated: 'Apr 27, 2026',
+      dashboardUrl: null,
+      insights: [
+        { type: 'warning', text: 'Amplitude dashboard not yet configured for India (Hindi) — add dashboard ID and chart IDs to enable analytics tracking.' },
+      ],
+      kpis: [],
+    },
     pipeline: [
       { label: 'Translations', state: 'done' },
-      { label: 'QA Build', state: 'active', note: 'Courtney in progress' },
-      { label: 'Country Review', state: 'pending', note: 'Post-launch via #watercooler' },
-      { label: 'Launch', state: 'pending', note: 'Thu Apr 2' },
-      { label: 'Post-Launch Monitoring', state: 'pending' },
+      { label: 'QA Build', state: 'done', note: 'Courtney completed' },
+      { label: 'Country Review', state: 'active', note: 'Via #watercooler' },
+      { label: 'Launch', state: 'live', note: 'Apr 2, 2026' },
+      { label: 'Post-Launch Monitoring', state: 'active' },
     ],
     bugs: [],
     jiraTickets: [
-      { key: 'CHANGE-87847', summary: '[QA] Phase 5: India (HI-IN)', status: 'ToDo', assignee: 'Courtney Atkinson', url: 'https://change.atlassian.net/browse/CHANGE-87847' },
+      { key: 'CHANGE-87847', summary: '[QA] Phase 5: India (HI-IN)', status: 'Closed', assignee: 'Courtney Atkinson', url: 'https://change.atlassian.net/browse/CHANGE-87847' },
     ],
   },
 

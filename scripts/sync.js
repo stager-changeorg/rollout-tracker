@@ -40,11 +40,12 @@ const JIRA_KEYS = [
 ];
 
 // ─── All Amplitude chart IDs referenced in rolloutData.js ─────────────────────
+// Charts with a 'new/' prefix use Amplitude's new chart editor URL format.
 const AMP_CHARTS = [
   // AU
   'wdyh390a', 'qq7s3q9d', '6xmfzdk7', 'btlur15n', 'xt2fc3wd', 'oi5iuwx6',
-  // CA
-  '7szsy01i', '7i72zzcm', 'bxowtz7z', 'tuxtnx8g', '87rkc2oo', '1xnuxtp6',
+  // CA (new editor charts)
+  'new/7szsy01i', 'new/7i72zzcm', 'new/bxowtz7z', 'new/tuxtnx8g', 'new/87rkc2oo', 'new/1xnuxtp6',
   // IN-ENG
   '91v4ihxt', 'j7uki6fe', 'gxmbpfnf', 'xn9jv01v', 'szegbgar', 'za0kyme6',
   // GB
@@ -55,6 +56,10 @@ const AMP_CHARTS = [
   'cagoy3ki', 'mrb4y339', '6onhsh3k', '77tpkaa0', '26a0azrl', 'x41mkdke',
   // RU
   'tkgv4edf', '7id5986h', '6jgwltx8', 'nnc3e049', '2gnt8iip', 'xa2kk3f0',
+  // FR — add chart IDs once Amplitude dashboards are created
+  // CA-FR — shares CA dashboard, add FR-specific charts when available
+  // JP — add chart IDs once Amplitude dashboard is confirmed live
+  // IN-HI — add chart IDs once Amplitude dashboard is confirmed live
 ];
 
 // ─── Jira fetch ────────────────────────────────────────────────────────────────
@@ -147,15 +152,33 @@ async function fetchAmplitudeChart(chartId) {
   if (!res.ok) throw new Error(`Amplitude ${chartId}: HTTP ${res.status}`);
   const data = await res.json();
 
-  // Amplitude returns: data.series = array of series, each series is array of {value, date}
-  const series = data?.data?.series?.[0];
-  if (!series || series.length === 0) return null;
+  // Try multiple response shapes — Amplitude varies by chart type:
+  //   Event segmentation: data.data.series[0] = [{value, date}, ...]
+  //   Retention / funnel: data.data.series[0] = [number, ...] or [[number,...], ...]
+  //   Some charts: data.series[0] (one level up)
+  const rawSeries = data?.data?.series?.[0] ?? data?.series?.[0] ?? null;
 
-  const sparkline = series.map(pt => typeof pt === 'object' ? pt.value : pt).filter(v => v != null);
+  if (!rawSeries?.length) {
+    console.warn(`  ~ Amplitude ${chartId}: 200 OK but no parseable series (keys: ${JSON.stringify(Object.keys(data?.data ?? data ?? {}))})`);
+    return null;
+  }
+
+  const sparkline = rawSeries
+    .map(pt => {
+      if (typeof pt === 'number') return pt;
+      if (Array.isArray(pt)) return typeof pt[1] === 'number' ? pt[1] : pt[0];
+      if (typeof pt === 'object') return pt?.value ?? null;
+      return null;
+    })
+    .filter(v => v != null);
+
+  if (!sparkline.length) {
+    console.warn(`  ~ Amplitude ${chartId}: series found but no numeric values`);
+    return null;
+  }
+
   const latest = sparkline[sparkline.length - 1];
-  const trend = calcTrend(sparkline);
-
-  return { sparkline: sparkline.slice(-30), latestRaw: latest, trend };
+  return { sparkline: sparkline.slice(-30), latestRaw: latest, trend: calcTrend(sparkline) };
 }
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
