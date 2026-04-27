@@ -163,9 +163,8 @@ async function fetchAmplitudeChart(chartId) {
     const funnelStep = data?.['0'] ?? data?.data?.['0'] ?? null;
     if (funnelStep?.cumulative || funnelStep?.dayFunnels) {
       if (chartId === 'qq7s3q9d') {
-        const rawDaysSample = funnelStep.dayFunnels;
-        const firstDay = Array.isArray(rawDaysSample) ? rawDaysSample[0] : Object.values(rawDaysSample ?? {})[0];
-        console.log(`DEBUG qq7s3q9d: cumulative=${JSON.stringify(funnelStep.cumulative)}, dayFunnels type=${Array.isArray(rawDaysSample)?'array['+rawDaysSample?.length+']':('object keys='+JSON.stringify(Object.keys(rawDaysSample??{}).slice(0,3)))}, first=${JSON.stringify(firstDay)}`);
+        const s = funnelStep.dayFunnels?.series;
+        console.log(`DEBUG qq7s3q9d: cumulative=${JSON.stringify(funnelStep.cumulative)}, series type=${Array.isArray(s)?'array['+s?.length+']':typeof s}, series=${JSON.stringify(s).slice(0,200)}`);
       }
       // dayFunnels may be an array or an object keyed by date/index
       const rawDays = funnelStep.dayFunnels ?? [];
