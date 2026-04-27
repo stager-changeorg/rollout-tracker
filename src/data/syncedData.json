@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-27T22:50:31.508Z",
+  "lastSynced": "2026-04-27T22:56:19.076Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -433,6 +433,306 @@
       ],
       "latestRaw": 36,
       "trend": "down"
+    },
+    "qq7s3q9d": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "6xmfzdk7": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "btlur15n": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "xt2fc3wd": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "oi5iuwx6": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
+    },
+    "j7uki6fe": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "gxmbpfnf": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "xn9jv01v": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "szegbgar": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "za0kyme6": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
+    },
+    "v3095j4s": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "ifl6qyx4": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "p6btbilu": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "bjty2uwk": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "7250v5eh": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
+    },
+    "mhrwrb2s": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "rb5xm2vt": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "65yosuok": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "ty6b0qum": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "hjp7l2nk": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
+    },
+    "mrb4y339": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "6onhsh3k": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "77tpkaa0": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "26a0azrl": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "x41mkdke": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
+    },
+    "7id5986h": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "6jgwltx8": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "nnc3e049": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "2gnt8iip": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        100
+      ],
+      "latestRaw": 100,
+      "trend": "neutral"
+    },
+    "xa2kk3f0": {
+      "sparkline": [
+        null,
+        null,
+        null,
+        0
+      ],
+      "latestRaw": 0,
+      "trend": "neutral"
     }
   },
   "sheets": {
