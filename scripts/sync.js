@@ -162,6 +162,11 @@ async function fetchAmplitudeChart(chartId) {
     // Chart returned 200 but data is in funnel/retention format: { "0": { cumulative, dayFunnels, ... } }
     const funnelStep = data?.['0'] ?? data?.data?.['0'] ?? null;
     if (funnelStep?.cumulative || funnelStep?.dayFunnels) {
+      if (chartId === 'qq7s3q9d') {
+        const rawDaysSample = funnelStep.dayFunnels;
+        const firstDay = Array.isArray(rawDaysSample) ? rawDaysSample[0] : Object.values(rawDaysSample ?? {})[0];
+        console.log(`DEBUG qq7s3q9d: cumulative=${JSON.stringify(funnelStep.cumulative)}, dayFunnels type=${Array.isArray(rawDaysSample)?'array['+rawDaysSample?.length+']':('object keys='+JSON.stringify(Object.keys(rawDaysSample??{}).slice(0,3)))}, first=${JSON.stringify(firstDay)}`);
+      }
       // dayFunnels may be an array or an object keyed by date/index
       const rawDays = funnelStep.dayFunnels ?? [];
       const days = Array.isArray(rawDays) ? rawDays : Object.values(rawDays);
@@ -190,7 +195,9 @@ async function fetchAmplitudeChart(chartId) {
         return { sparkline: null, latestRaw: pct, trend: 'neutral' };
       }
 
-      console.warn(`  ~ Amplitude ${chartId}: funnel format but no parseable values — cumulative=${JSON.stringify(funnelStep.cumulative?.slice(0,3))}, dayFunnels[0]=${JSON.stringify(funnelStep.dayFunnels?.[0])}`);
+      const rawDaysSample = funnelStep.dayFunnels;
+      const firstDay = Array.isArray(rawDaysSample) ? rawDaysSample[0] : Object.values(rawDaysSample ?? {})[0];
+      console.warn(`  ~ Amplitude ${chartId}: funnel no series — cumulative=${JSON.stringify(funnelStep.cumulative)}, dayFunnels type=${Array.isArray(rawDaysSample)?'array['+rawDaysSample?.length+']':'object'}, first=${JSON.stringify(firstDay)}`);
     } else {
       console.warn(`  ~ Amplitude ${chartId}: unknown format (root keys: ${JSON.stringify(Object.keys(data ?? {}).slice(0, 8))})`);
     }
