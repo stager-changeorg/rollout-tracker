@@ -1,12 +1,12 @@
 {
-  "lastSynced": "2026-04-26T23:23:10.274Z",
+  "lastSynced": "2026-04-27T01:13:49.958Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-22T08:52:39.673-0700",
+      "updatedAt": "2026-04-26T17:42:33.232-0700",
       "createdAt": "2026-03-02T16:33:41.752-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (España) (",
       "latestComment": null
@@ -44,7 +44,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-13T11:10:09.845-0700",
+      "updatedAt": "2026-04-26T17:42:33.626-0700",
       "createdAt": "2026-03-02T16:32:44.870-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Português (Brasil)",
       "latestComment": null
@@ -54,7 +54,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-22T08:52:40.004-0700",
+      "updatedAt": "2026-04-26T17:42:33.645-0700",
       "createdAt": "2026-03-02T16:34:31.170-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Bahasa Indonesia (",
       "latestComment": null
@@ -142,7 +142,7 @@
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-22T08:52:40.385-0700",
+      "updatedAt": "2026-04-26T17:42:33.855-0700",
       "createdAt": "2026-03-02T16:34:48.104-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Türkçe (Turkish) (",
       "latestComment": null
@@ -166,7 +166,7 @@
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-22T08:52:39.339-0700",
+      "updatedAt": "2026-04-26T17:42:35.322-0700",
       "createdAt": "2026-03-02T16:33:20.011-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Italiano (it-IT) /",
       "latestComment": null
@@ -176,7 +176,7 @@
       "assignee": "Olga Fetisova",
       "assigneeEmail": "ofetisova@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-13T09:21:56.027-0700",
+      "updatedAt": "2026-04-26T17:42:33.866-0700",
       "createdAt": "2026-03-02T16:34:00.230-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: Español (Argentina",
       "latestComment": null
@@ -228,7 +228,7 @@
       "assignee": "Courtney Atkinson",
       "assigneeEmail": "courtney.atkinson@change.org",
       "priority": "P2 - Significant",
-      "updatedAt": "2026-04-22T09:12:05.083-0700",
+      "updatedAt": "2026-04-26T17:42:34.101-0700",
       "createdAt": "2026-03-02T16:35:02.023-0800",
       "description": "Confluence page: List of features to release globally Sunrise, Redesigned Dashboard Social share visuals Non-personalized Next Steps / Daily Steps to Victory New petition activity page Features Not Included Email DM (banner or feature on DM tab) Endorsements AI guidance beta Testing Steps Pre-requisites Note: I have marked the ones that are ready, and included the link in case you want to double check any configuration Make sure Sunrise dashboard is enabled for locale/Country: ภาษาไทย (Thai) (th",
       "latestComment": null
@@ -237,7 +237,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        4282,
         4063,
         4870,
         4997,
@@ -266,14 +265,14 @@
         4705,
         4611,
         3829,
-        3884
+        3963,
+        400
       ],
-      "latestRaw": 3884,
-      "trend": "neutral"
+      "latestRaw": 400,
+      "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        96,
         89,
         110,
         108,
@@ -302,14 +301,14 @@
         116,
         115,
         71,
-        100
+        100,
+        1
       ],
-      "latestRaw": 100,
-      "trend": "up"
+      "latestRaw": 1,
+      "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        199,
         211,
         228,
         216,
@@ -338,14 +337,14 @@
         273,
         254,
         226,
-        232
+        233,
+        3
       ],
-      "latestRaw": 232,
-      "trend": "neutral"
+      "latestRaw": 3,
+      "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        63,
         59,
         70,
         71,
@@ -374,14 +373,14 @@
         53,
         60,
         43,
-        53
+        54,
+        4
       ],
-      "latestRaw": 53,
-      "trend": "up"
+      "latestRaw": 4,
+      "trend": "down"
     },
     "821tb682": {
       "sparkline": [
-        1773,
         1715,
         1608,
         1634,
@@ -393,14 +392,14 @@
         1496,
         1506,
         1666,
-        1627
+        1642,
+        10
       ],
-      "latestRaw": 1627,
-      "trend": "neutral"
+      "latestRaw": 10,
+      "trend": "down"
     },
     "19y8zw4l": {
       "sparkline": [
-        56,
         42,
         46,
         54,
@@ -429,10 +428,11 @@
         48,
         47,
         34,
-        41
+        41,
+        1
       ],
-      "latestRaw": 41,
-      "trend": "up"
+      "latestRaw": 1,
+      "trend": "down"
     }
   },
   "sheets": {
