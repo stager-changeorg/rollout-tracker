@@ -159,7 +159,15 @@ async function fetchAmplitudeChart(chartId) {
   const rawSeries = data?.data?.series?.[0] ?? data?.series?.[0] ?? null;
 
   if (!rawSeries?.length) {
-    console.warn(`  ~ Amplitude ${chartId}: 200 OK but no parseable series (keys: ${JSON.stringify(Object.keys(data?.data ?? data ?? {}))})`);
+    // Chart returned 200 but data is in a different shape (retention, funnel, etc.)
+    // Try numeric-keyed root format: { "0": [...], "1": [...] }
+    const numericSeries = data?.['0'] ?? data?.data?.['0'] ?? null;
+    if (numericSeries) {
+      const keys0 = JSON.stringify(Object.keys(typeof numericSeries === 'object' && !Array.isArray(numericSeries) ? numericSeries : {}).slice(0, 5));
+      console.warn(`  ~ Amplitude ${chartId}: numeric-keyed format — data[0] type=${Array.isArray(numericSeries) ? 'array['+numericSeries.length+']' : 'object'} keys=${keys0}`);
+    } else {
+      console.warn(`  ~ Amplitude ${chartId}: 200 OK but unknown format (root keys: ${JSON.stringify(Object.keys(data ?? {}).slice(0, 8))})`);
+    }
     return null;
   }
 
