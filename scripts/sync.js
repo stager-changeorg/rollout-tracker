@@ -162,8 +162,9 @@ async function fetchAmplitudeChart(chartId) {
     // Chart returned 200 but data is in funnel/retention format: { "0": { cumulative, dayFunnels, ... } }
     const funnelStep = data?.['0'] ?? data?.data?.['0'] ?? null;
     if (funnelStep?.cumulative || funnelStep?.dayFunnels) {
-      // dayFunnels is a time series of daily funnel snapshots — extract step-1 (conversion) per day
-      const days = funnelStep.dayFunnels ?? [];
+      // dayFunnels may be an array or an object keyed by date/index
+      const rawDays = funnelStep.dayFunnels ?? [];
+      const days = Array.isArray(rawDays) ? rawDays : Object.values(rawDays);
       const sparkline = days
         .map(snap => {
           if (Array.isArray(snap)) {
