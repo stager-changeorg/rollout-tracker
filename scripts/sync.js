@@ -162,41 +162,33 @@ async function fetchAmplitudeChart(chartId) {
     // Chart returned 200 but data is in funnel/retention format: { "0": { cumulative, dayFunnels, ... } }
     const funnelStep = data?.['0'] ?? data?.data?.['0'] ?? null;
     if (funnelStep?.cumulative || funnelStep?.dayFunnels) {
-      if (chartId === 'qq7s3q9d') {
-        const s = funnelStep.dayFunnels?.series;
-        console.log(`DEBUG qq7s3q9d: cumulative=${JSON.stringify(funnelStep.cumulative)}, series type=${Array.isArray(s)?'array['+s?.length+']':typeof s}, series=${JSON.stringify(s).slice(0,200)}`);
-      }
-      // dayFunnels may be an array or an object keyed by date/index
-      const rawDays = funnelStep.dayFunnels ?? [];
-      const days = Array.isArray(rawDays) ? rawDays : Object.values(rawDays);
-      const sparkline = days
-        .map(snap => {
-          if (Array.isArray(snap)) {
-            // snap = [step0_pct, step1_pct] — step1 is the conversion rate
-            const v = snap[1];
-            return v == null ? null : (v <= 1 ? Math.round(v * 100) : Math.round(v));
-          }
-          return null;
-        })
-        .filter(v => v != null);
+      // dayFunnels.series = [[step0_count, step1_count], ...] — one entry per week
+      // Conversion rate = step1 / step0 * 100. Filter partial weeks (< 10 users).
+      const seriesArr = funnelStep.dayFunnels?.series;
+      if (Array.isArray(seriesArr) && seriesArr.length > 0) {
+        const sparkline = seriesArr
+          .filter(snap => Array.isArray(snap) && snap[0] >= 10)
+          .map(snap => Math.round((snap[1] / snap[0]) * 100))
+          .filter(v => !isNaN(v));
 
-      if (sparkline.length) {
-        const latest = sparkline[sparkline.length - 1];
-        console.log(`  ✓ Amplitude ${chartId} (funnel): latest=${latest} trend=${calcTrend(sparkline)}`);
-        return { sparkline: sparkline.slice(-30), latestRaw: latest, trend: calcTrend(sparkline) };
+        if (sparkline.length) {
+          // Overall rate from cumulative (last element, skip the 100% baseline at index 0)
+          const raw = funnelStep.cumulative?.[funnelStep.cumulative.length - 1];
+          const latestRaw = raw != null
+            ? (raw <= 1 ? Math.round(raw * 100) : Math.round(raw))
+            : sparkline[sparkline.length - 1];
+          return { sparkline: sparkline.slice(-30), latestRaw, trend: calcTrend(sparkline) };
+        }
       }
 
-      // Fall back to overall cumulative rate if no daily series
-      const overallRate = funnelStep.cumulative?.[1];
-      if (overallRate != null) {
-        const pct = overallRate <= 1 ? Math.round(overallRate * 100) : Math.round(overallRate);
-        console.log(`  ✓ Amplitude ${chartId} (funnel overall): rate=${pct}%`);
+      // Fall back to cumulative overall rate with no sparkline
+      const raw = funnelStep.cumulative?.[funnelStep.cumulative.length - 1];
+      if (raw != null && raw !== 1) {
+        const pct = raw <= 1 ? Math.round(raw * 100) : Math.round(raw);
         return { sparkline: null, latestRaw: pct, trend: 'neutral' };
       }
 
-      const rawDaysSample = funnelStep.dayFunnels;
-      const firstDay = Array.isArray(rawDaysSample) ? rawDaysSample[0] : Object.values(rawDaysSample ?? {})[0];
-      console.warn(`  ~ Amplitude ${chartId}: funnel no series — cumulative=${JSON.stringify(funnelStep.cumulative)}, dayFunnels type=${Array.isArray(rawDaysSample)?'array['+rawDaysSample?.length+']':'object'}, first=${JSON.stringify(firstDay)}`);
+      console.warn(`  ~ Amplitude ${chartId}: funnel — no parseable data (cumulative=${JSON.stringify(funnelStep.cumulative?.slice(0,3))})`);
     } else {
       console.warn(`  ~ Amplitude ${chartId}: unknown format (root keys: ${JSON.stringify(Object.keys(data ?? {}).slice(0, 8))})`);
     }
