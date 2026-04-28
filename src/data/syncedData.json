@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-27T23:35:39.521Z",
+  "lastSynced": "2026-04-28T00:27:29.151Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -237,7 +237,6 @@
   "amplitude": {
     "wdyh390a": {
       "sparkline": [
-        4063,
         4870,
         4997,
         5069,
@@ -266,14 +265,14 @@
         4611,
         3829,
         3963,
-        4532
+        4728,
+        222
       ],
-      "latestRaw": 4532,
-      "trend": "up"
+      "latestRaw": 222,
+      "trend": "down"
     },
     "91v4ihxt": {
       "sparkline": [
-        89,
         110,
         108,
         115,
@@ -302,14 +301,14 @@
         115,
         71,
         100,
-        123
+        123,
+        0
       ],
-      "latestRaw": 123,
-      "trend": "up"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "cagoy3ki": {
       "sparkline": [
-        211,
         228,
         216,
         235,
@@ -338,14 +337,14 @@
         254,
         226,
         233,
-        285
+        286,
+        4
       ],
-      "latestRaw": 285,
-      "trend": "up"
+      "latestRaw": 4,
+      "trend": "down"
     },
     "tkgv4edf": {
       "sparkline": [
-        59,
         70,
         71,
         64,
@@ -374,10 +373,11 @@
         60,
         43,
         54,
-        64
+        65,
+        0
       ],
-      "latestRaw": 64,
-      "trend": "up"
+      "latestRaw": 0,
+      "trend": "down"
     },
     "821tb682": {
       "sparkline": [
@@ -400,7 +400,6 @@
     },
     "19y8zw4l": {
       "sparkline": [
-        42,
         46,
         54,
         55,
@@ -429,309 +428,491 @@
         47,
         34,
         41,
-        36
+        39,
+        4
       ],
-      "latestRaw": 36,
+      "latestRaw": 4,
       "trend": "down"
     },
     "qq7s3q9d": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        35,
+        41,
+        43,
+        34,
+        38,
+        40,
+        47,
+        41,
+        44,
+        41,
+        41,
+        41,
+        4
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 40,
+      "trend": "down"
     },
     "6xmfzdk7": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        44,
+        42,
+        40,
+        41,
+        39,
+        39,
+        38,
+        42,
+        38,
+        40,
+        41,
+        42,
+        26
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 53,
+      "trend": "down"
     },
     "btlur15n": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        36,
+        31,
+        38,
+        31,
+        35,
+        29,
+        32,
+        32,
+        41,
+        35,
+        38,
+        38,
+        32
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 34,
+      "trend": "down"
     },
     "xt2fc3wd": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        64,
+        62,
+        61,
+        61,
+        73,
+        69,
+        64,
+        75,
+        69,
+        63,
+        70,
+        67,
+        9
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 66,
+      "trend": "down"
     },
     "oi5iuwx6": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 10,
       "trend": "neutral"
     },
     "j7uki6fe": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        12,
+        11,
+        12,
+        13,
+        19,
+        8,
+        10,
+        15,
+        16,
+        13,
+        11,
+        15,
+        0
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 11,
+      "trend": "down"
     },
     "gxmbpfnf": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        31,
+        32,
+        36,
+        38,
+        39,
+        32,
+        25,
+        32,
+        28,
+        29,
+        27,
+        34,
+        28
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 33,
+      "trend": "down"
     },
     "xn9jv01v": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        5,
+        6,
+        7,
+        9,
+        12,
+        2,
+        3,
+        8,
+        9,
+        8,
+        7,
+        10,
+        6
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 5,
+      "trend": "down"
     },
     "szegbgar": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        62,
+        68,
+        55,
+        53,
+        62,
+        34,
+        49,
+        43,
+        58,
+        56,
+        52,
+        51
       ],
-      "latestRaw": 100,
+      "latestRaw": 50,
       "trend": "neutral"
     },
     "za0kyme6": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 10,
       "trend": "neutral"
     },
     "v3095j4s": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        42,
+        43,
+        37,
+        43,
+        37,
+        37,
+        42,
+        41,
+        38,
+        40,
+        41,
+        37,
+        2
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 40,
+      "trend": "down"
     },
     "ifl6qyx4": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        43,
+        45,
+        44,
+        42,
+        41,
+        41,
+        42,
+        39,
+        37,
+        39,
+        40,
+        39,
+        25
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 53,
+      "trend": "down"
     },
     "p6btbilu": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        30,
+        35,
+        27,
+        33,
+        27,
+        24,
+        30,
+        31,
+        30,
+        24,
+        24,
+        26,
+        12
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 28,
+      "trend": "down"
     },
     "bjty2uwk": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        69,
+        67,
+        65,
+        69,
+        68,
+        60,
+        72,
+        64,
+        61,
+        64,
+        65,
+        64,
+        33
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 65,
+      "trend": "down"
     },
     "7250v5eh": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 10,
       "trend": "neutral"
     },
     "mhrwrb2s": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        17,
+        27,
+        32,
+        27,
+        32,
+        10,
+        9,
+        23,
+        31,
+        28,
+        22,
+        29
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 19,
+      "trend": "up"
     },
     "rb5xm2vt": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        39,
+        40,
+        46,
+        44,
+        48,
+        30,
+        34,
+        36,
+        39,
+        43,
+        40,
+        36,
+        21
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 41,
+      "trend": "down"
     },
     "65yosuok": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        13,
+        25,
+        28,
+        21,
+        27,
+        5,
+        7,
+        13,
+        18,
+        28,
+        26,
+        18
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 14,
+      "trend": "down"
     },
     "ty6b0qum": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        53,
+        36,
+        56,
+        44,
+        49,
+        51,
+        45,
+        56,
+        71,
+        63,
+        52,
+        56
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 52,
+      "trend": "up"
     },
     "hjp7l2nk": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 12,
       "trend": "neutral"
     },
     "mrb4y339": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        42,
+        36,
+        35,
+        41,
+        44,
+        29,
+        38,
+        43,
+        40,
+        44,
+        46,
+        46,
+        0
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 40,
+      "trend": "down"
     },
     "6onhsh3k": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        40,
+        36,
+        39,
+        35,
+        38,
+        37,
+        38,
+        39,
+        35,
+        38,
+        38,
+        38,
+        19
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 49,
+      "trend": "down"
     },
     "77tpkaa0": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        27,
+        30,
+        23,
+        30,
+        31,
+        19,
+        24,
+        31,
+        33,
+        38,
+        35,
+        33,
+        19
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 29,
+      "trend": "down"
     },
     "26a0azrl": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        65,
+        60,
+        70,
+        65,
+        65,
+        75,
+        69,
+        61,
+        62,
+        71,
+        69,
+        63,
+        33
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 66,
+      "trend": "down"
     },
     "x41mkdke": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 8,
       "trend": "neutral"
     },
     "7id5986h": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        26,
+        23,
+        21,
+        23,
+        21,
+        15,
+        19,
+        18,
+        23,
+        22,
+        24,
+        23,
+        0
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 21,
+      "trend": "down"
     },
     "6jgwltx8": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        39,
+        37,
+        31,
+        38,
+        32,
+        30,
+        39,
+        34,
+        35,
+        34,
+        33,
+        30,
+        8
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 41,
+      "trend": "down"
     },
     "nnc3e049": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        11,
+        10,
+        9,
+        12,
+        11,
+        6,
+        9,
+        13,
+        10,
+        9,
+        11,
+        7,
+        6
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 10,
+      "trend": "down"
     },
     "2gnt8iip": {
       "sparkline": [
-        null,
-        null,
-        null,
-        100
+        41,
+        41,
+        45,
+        48,
+        37,
+        43,
+        33,
+        61,
+        38,
+        41,
+        43,
+        38
       ],
-      "latestRaw": 100,
-      "trend": "neutral"
+      "latestRaw": 43,
+      "trend": "down"
     },
     "xa2kk3f0": {
-      "sparkline": [
-        null,
-        null,
-        null,
-        0
-      ],
-      "latestRaw": 0,
+      "sparkline": null,
+      "latestRaw": 8,
       "trend": "neutral"
     }
   },
