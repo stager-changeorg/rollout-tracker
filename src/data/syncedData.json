@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-28T01:21:22.796Z",
+  "lastSynced": "2026-04-28T05:02:15.874Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -266,9 +266,9 @@
         3829,
         3963,
         4728,
-        222
+        1205
       ],
-      "latestRaw": 222,
+      "latestRaw": 1205,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -302,9 +302,9 @@
         71,
         100,
         123,
-        0
+        25
       ],
-      "latestRaw": 0,
+      "latestRaw": 25,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -338,9 +338,9 @@
         226,
         233,
         286,
-        4
+        40
       ],
-      "latestRaw": 4,
+      "latestRaw": 40,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -374,9 +374,9 @@
         43,
         54,
         65,
-        0
+        12
       ],
-      "latestRaw": 0,
+      "latestRaw": 12,
       "trend": "down"
     },
     "821tb682": {
@@ -393,9 +393,9 @@
         1506,
         1666,
         1642,
-        293
+        462
       ],
-      "latestRaw": 293,
+      "latestRaw": 462,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -429,9 +429,9 @@
         34,
         41,
         39,
-        4
+        24
       ],
-      "latestRaw": 4,
+      "latestRaw": 24,
       "trend": "down"
     },
     "qq7s3q9d": {
@@ -448,9 +448,9 @@
         41,
         41,
         41,
-        4
+        29
       ],
-      "latestRaw": 40,
+      "latestRaw": 41,
       "trend": "down"
     },
     "6xmfzdk7": {
@@ -467,7 +467,7 @@
         40,
         41,
         42,
-        26
+        29
       ],
       "latestRaw": 53,
       "trend": "down"
@@ -505,14 +505,14 @@
         63,
         70,
         67,
-        9
+        44
       ],
       "latestRaw": 66,
       "trend": "down"
     },
     "oi5iuwx6": {
       "sparkline": null,
-      "latestRaw": 10,
+      "latestRaw": 11,
       "trend": "neutral"
     },
     "j7uki6fe": {
@@ -529,7 +529,7 @@
         13,
         11,
         15,
-        0
+        9
       ],
       "latestRaw": 11,
       "trend": "down"
@@ -548,7 +548,7 @@
         29,
         27,
         34,
-        28
+        27
       ],
       "latestRaw": 33,
       "trend": "down"
@@ -585,10 +585,11 @@
         58,
         56,
         52,
-        51
+        51,
+        30
       ],
       "latestRaw": 50,
-      "trend": "neutral"
+      "trend": "down"
     },
     "za0kyme6": {
       "sparkline": null,
@@ -608,8 +609,8 @@
         38,
         40,
         41,
-        37,
-        2
+        38,
+        11
       ],
       "latestRaw": 40,
       "trend": "down"
@@ -628,7 +629,7 @@
         39,
         40,
         39,
-        25
+        27
       ],
       "latestRaw": 53,
       "trend": "down"
@@ -647,7 +648,7 @@
         24,
         24,
         26,
-        12
+        20
       ],
       "latestRaw": 28,
       "trend": "down"
@@ -666,7 +667,7 @@
         64,
         65,
         64,
-        33
+        37
       ],
       "latestRaw": 65,
       "trend": "down"
@@ -689,10 +690,11 @@
         31,
         28,
         22,
-        29
+        30,
+        6
       ],
       "latestRaw": 19,
-      "trend": "up"
+      "trend": "down"
     },
     "rb5xm2vt": {
       "sparkline": [
@@ -708,10 +710,10 @@
         43,
         40,
         36,
-        21
+        40
       ],
       "latestRaw": 41,
-      "trend": "down"
+      "trend": "up"
     },
     "65yosuok": {
       "sparkline": [
@@ -726,7 +728,8 @@
         18,
         28,
         26,
-        18
+        18,
+        11
       ],
       "latestRaw": 14,
       "trend": "down"
@@ -744,14 +747,14 @@
         71,
         63,
         52,
-        56
+        58
       ],
       "latestRaw": 52,
       "trend": "up"
     },
     "hjp7l2nk": {
       "sparkline": null,
-      "latestRaw": 12,
+      "latestRaw": 13,
       "trend": "neutral"
     },
     "mrb4y339": {
@@ -768,7 +771,7 @@
         44,
         46,
         46,
-        0
+        20
       ],
       "latestRaw": 40,
       "trend": "down"
@@ -787,7 +790,7 @@
         38,
         38,
         38,
-        19
+        25
       ],
       "latestRaw": 49,
       "trend": "down"
@@ -806,7 +809,7 @@
         38,
         35,
         33,
-        19
+        28
       ],
       "latestRaw": 29,
       "trend": "down"
@@ -824,8 +827,8 @@
         62,
         71,
         69,
-        63,
-        33
+        65,
+        42
       ],
       "latestRaw": 66,
       "trend": "down"
@@ -848,8 +851,8 @@
         23,
         22,
         24,
-        23,
-        0
+        24,
+        7
       ],
       "latestRaw": 21,
       "trend": "down"
@@ -868,7 +871,7 @@
         34,
         33,
         30,
-        8
+        19
       ],
       "latestRaw": 41,
       "trend": "down"
@@ -887,10 +890,10 @@
         9,
         11,
         7,
-        6
+        7
       ],
       "latestRaw": 10,
-      "trend": "down"
+      "trend": "neutral"
     },
     "2gnt8iip": {
       "sparkline": [
