@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-04-30T07:52:51.874Z",
+  "lastSynced": "2026-04-30T10:28:22.546Z",
   "jira": {
     "CHANGE-87845": {
       "status": "Implementation",
@@ -266,9 +266,9 @@
         4728,
         4875,
         4847,
-        1736
+        2197
       ],
-      "latestRaw": 1736,
+      "latestRaw": 2197,
       "trend": "down"
     },
     "91v4ihxt": {
@@ -302,9 +302,9 @@
         123,
         122,
         108,
-        41
+        51
       ],
-      "latestRaw": 41,
+      "latestRaw": 51,
       "trend": "down"
     },
     "cagoy3ki": {
@@ -338,9 +338,9 @@
         286,
         266,
         282,
-        103
+        146
       ],
-      "latestRaw": 103,
+      "latestRaw": 146,
       "trend": "down"
     },
     "tkgv4edf": {
@@ -374,9 +374,9 @@
         65,
         87,
         58,
-        24
+        37
       ],
-      "latestRaw": 24,
+      "latestRaw": 37,
       "trend": "down"
     },
     "821tb682": {
@@ -393,9 +393,9 @@
         1506,
         1666,
         1642,
-        879
+        938
       ],
-      "latestRaw": 879,
+      "latestRaw": 938,
       "trend": "down"
     },
     "19y8zw4l": {
@@ -448,9 +448,9 @@
         41,
         41,
         41,
-        36
+        31
       ],
-      "latestRaw": 41,
+      "latestRaw": 40,
       "trend": "down"
     },
     "6xmfzdk7": {
@@ -505,7 +505,7 @@
         63,
         70,
         69,
-        57
+        54
       ],
       "latestRaw": 66,
       "trend": "down"
@@ -529,10 +529,10 @@
         13,
         11,
         15,
-        15
+        16
       ],
       "latestRaw": 11,
-      "trend": "neutral"
+      "trend": "up"
     },
     "gxmbpfnf": {
       "sparkline": [
@@ -548,7 +548,7 @@
         29,
         27,
         34,
-        31
+        32
       ],
       "latestRaw": 33,
       "trend": "down"
@@ -586,10 +586,10 @@
         56,
         52,
         51,
-        46
+        52
       ],
-      "latestRaw": 50,
-      "trend": "down"
+      "latestRaw": 51,
+      "trend": "neutral"
     },
     "za0kyme6": {
       "sparkline": null,
@@ -610,7 +610,7 @@
         40,
         41,
         38,
-        24
+        30
       ],
       "latestRaw": 40,
       "trend": "down"
@@ -629,7 +629,7 @@
         39,
         40,
         39,
-        32
+        33
       ],
       "latestRaw": 53,
       "trend": "down"
@@ -648,10 +648,10 @@
         24,
         24,
         26,
-        24
+        26
       ],
       "latestRaw": 28,
-      "trend": "down"
+      "trend": "neutral"
     },
     "bjty2uwk": {
       "sparkline": [
@@ -667,7 +667,7 @@
         64,
         65,
         66,
-        44
+        52
       ],
       "latestRaw": 65,
       "trend": "down"
@@ -691,7 +691,7 @@
         28,
         22,
         30,
-        15
+        16
       ],
       "latestRaw": 19,
       "trend": "down"
@@ -729,10 +729,10 @@
         28,
         26,
         18,
-        18
+        19
       ],
       "latestRaw": 14,
-      "trend": "neutral"
+      "trend": "up"
     },
     "ty6b0qum": {
       "sparkline": [
@@ -748,9 +748,9 @@
         63,
         52,
         58,
-        25
+        20
       ],
-      "latestRaw": 52,
+      "latestRaw": 51,
       "trend": "down"
     },
     "hjp7l2nk": {
@@ -772,7 +772,7 @@
         44,
         46,
         46,
-        26
+        34
       ],
       "latestRaw": 40,
       "trend": "down"
@@ -810,7 +810,7 @@
         38,
         35,
         33,
-        34
+        33
       ],
       "latestRaw": 29,
       "trend": "neutral"
@@ -829,7 +829,7 @@
         71,
         69,
         66,
-        41
+        51
       ],
       "latestRaw": 66,
       "trend": "down"
@@ -853,7 +853,7 @@
         22,
         24,
         24,
-        15
+        19
       ],
       "latestRaw": 21,
       "trend": "down"
@@ -872,7 +872,7 @@
         34,
         33,
         30,
-        24
+        27
       ],
       "latestRaw": 41,
       "trend": "down"
@@ -891,7 +891,7 @@
         9,
         11,
         7,
-        13
+        12
       ],
       "latestRaw": 10,
       "trend": "up"
@@ -910,7 +910,7 @@
         41,
         43,
         38,
-        6
+        18
       ],
       "latestRaw": 42,
       "trend": "down"
